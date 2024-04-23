@@ -51,7 +51,7 @@ nav {
 }
 
 .item:hover {
-    background-color: #f1f1f1;
+    background-color: #ffaf3f;
     padding: 4px;
     transition: 0.4s;
     border-radius: 8px;
@@ -61,6 +61,10 @@ nav {
     display: flex;
     margin-top: 5px;
     margin-left: 10px;
+}
+
+h2 {
+    margin-left: 20px;
 }
 
 .imgcontainer {
