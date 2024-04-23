@@ -51,7 +51,7 @@ nav {
 }
 
 .item:hover {
-    background-color: #ffaf3f;
+    background-color: #f1f1f1;
     padding: 4px;
     transition: 0.4s;
     border-radius: 8px;
