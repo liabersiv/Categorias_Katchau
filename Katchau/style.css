@@ -5,6 +5,7 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+
 .container {
     justify-content: center;
     text-align: right;
@@ -13,8 +14,8 @@
 }
 
 input[type=search] {
-    position: absolute;
-    width: 110px;
+    position: relative;
+    width: 300px;
     padding: 8px;
     transition: 0.4s;
     border: 1px solid #ccc;
@@ -22,22 +23,18 @@ input[type=search] {
 }
 
 input[type=search]:focus {
-    width: 200px;
+    width: 400px;
     transition: 0.4s;
     background-color: #f1f1f1;
     outline: none;
     border: 1px solid #ccc;
 }
 
-nav {
+.items {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-}
-
-.items {
-    display: flex;
     margin-top: 10px;
 }
 
@@ -48,20 +45,35 @@ nav {
     cursor: pointer;
     font-size: 20px;
     transition: 0.4s;
+    padding: 4px;
 }
 
 .item:hover {
     background-color: #f1f1f1;
-    padding: 4px;
-    transition: 0.4s;
+    transition: 0.3s;
     border-radius: 8px;
 }
 
 .div-search {
     display: flex;
-    margin-top: 5px;
+    justify-content: center;
+    margin-top: 10px;
     margin-left: 10px;
 }
+
+.searchBar {
+    margin-top: 10px;
+}
+
+.icon {
+    display: flex;
+    float: left;
+    justify-content: left;
+    justify-self: left;
+    justify-items: left;
+    margin-top: 25px;
+    margin-left: 10px;
+}   
 
 h2 {
     margin-left: 20px;
@@ -90,4 +102,3 @@ img {
     margin-left: 30px;
     border-radius: 5px;
 }
-
