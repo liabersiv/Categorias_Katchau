@@ -5,16 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Katchau</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="./css/menu-3/menu.css">
 </head>
 
 <body>
     <!-- Nav Section -->
     <nav>
+        <!-- Burger Menu -->
+        <button class="burger" onclick="toggleMenu()"></button>
+        <div class="background"></div>
+        <div class="menu">
+            <nav>
+                <a style="animation-delay: 0.2s">About</a>
+                <a style="animation-delay: 0.3s">Portfolio</a>
+                <a style="animation-delay: 0.4s">Services</a>
+                <a style="animation-delay: 0.5s">Contact</a>
+            </nav>
+        </div>
+        <script type="text/javascript">
+            const toggleMenu = () => document.body.classList.toggle("open");
+        </script>
+        <!-- Search Bar -->
         <div class="div-search">
             <input class="searchBar" type="search" placeholder="Pesquisar..." name="search">
         </div>
