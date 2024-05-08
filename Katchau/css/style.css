@@ -13,6 +13,10 @@
     max-width: 80%;
 }
 
+i {
+    padding-right: 15px;
+} 
+
 input[type=search] {
     position: relative;
     width: 300px;
@@ -45,13 +49,15 @@ input[type=search]:focus {
     cursor: pointer;
     font-size: 20px;
     transition: 0.4s;
-    padding: 4px;
+    padding: 8px;
 }
 
 .item:hover {
-    background-color: #f1f1f1;
+    /* background-image: linear-gradient(#ccc, purple); */
+    background-color: #ccc;
     transition: 0.3s;
     border-radius: 8px;
+    color: black;
 }
 
 .div-search {
