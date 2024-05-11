@@ -1,5 +1,5 @@
+- Animacao de scroll na pagina
 - Search bar para direita
-- Icones na extrema direita
 - Background do menu hamburger para laranja BEM escuro
 - Mudar Background da nav (cor nao decidida ainda)
 - Retirar animacao de focus do search bar e colocar animacao nos itens da UL
