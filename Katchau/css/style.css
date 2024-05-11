@@ -42,6 +42,73 @@ input[type=search]:focus {
     margin-top: 10px;
 }
 
+.iconsItems {
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+    margin-top: 10px;
+    margin-right: 30px;
+}
+
+.iconLink {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Icons in Header */
+
+.bi-person-circle {
+    color: #fff;
+    transition: 0.2s;
+}
+.bi-person-circle:hover {
+    color: #ffffffaf;
+    transition: 0.2s;
+}
+
+
+.bi-heart-fill {
+    color: #fc3a4a;
+    transition: 0.2s;
+}
+.bi-heart-fill:hover {
+    color: #fc3a4ade;
+    transition: 0.2s;
+}
+
+.bi-telephone-inbound-fill {
+    color: #ccc;
+    transition: 0.2s;
+}
+.bi-telephone-inbound-fill:hover {
+    color: #ccccccd5;
+    transition: 0.2s;
+}
+
+.bi-cart-fill {
+    color: #00c6a3;
+    transition: 0.2s;
+}
+.bi-cart-fill:hover {
+    color: #00c6a2d7;
+    transition: 0.2s;
+}
+
+.btn {
+    padding: 4px;
+    /* border: 1px solid #ccc; */
+    /* background-color: #ccc; */
+    border-radius: 4px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.iconHeader {
+    padding: 0;
+    font-size: 27px;
+}
+
 .item {
     justify-content: space-between;
     margin: 10px;
@@ -54,7 +121,7 @@ input[type=search]:focus {
 
 .item:hover {
     /* background-image: linear-gradient(#ccc, purple); */
-    background-color: #ccc;
+    background-color: #ffa750;
     transition: 0.3s;
     border-radius: 8px;
     color: black;
@@ -62,13 +129,28 @@ input[type=search]:focus {
 
 .div-search {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     margin-top: 10px;
     margin-left: 10px;
 }
 
+div.teste {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
 .searchBar {
     margin-top: 10px;
+}
+
+
+img.logo-home {
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    display: flex;
 }
 
 .icon {
@@ -77,9 +159,41 @@ input[type=search]:focus {
     justify-content: left;
     justify-self: left;
     justify-items: left;
-    margin-top: 25px;
     margin-left: 10px;
+    margin-right: 90px;
+    margin-bottom: 60px;
 }   
+
+/* Login Buttons */
+
+.login-container {
+    display: flex;
+    justify-content: right;
+    margin-right: 30px;
+}
+
+.login {
+    display: flex;
+    justify-items: right;
+}
+
+.loginBtn, .signUpBtn {
+    border: 1px solid #ccc;
+    color: white;
+    padding: 10px;
+    font-size: 17px;
+    border-radius: 6px;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+.loginBtn:hover, .signUpBtn:hover {
+    cursor: pointer;
+    background-color: #ffa750;
+    color: black;
+    transition: 0.3s;
+    border: 1px solid #ffa750;
+}
 
 h2 {
     margin-left: 20px;
