@@ -3,3 +3,4 @@
 - Background do menu hamburger para laranja BEM escuro
 - Mudar Background da nav (cor nao decidida ainda)
 - Retirar animacao de focus do search bar e colocar animacao nos itens da UL
+- A section de produtos em destaque ou produtos em geral, pode copiar o codigo que eu fiz na atividade de PW-I dos Sneakers
