@@ -21,17 +21,20 @@ input[type=search] {
     position: relative;
     width: 300px;
     padding: 8px;
-    transition: 0.4s;
+    transition: all 0.2s;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
 input[type=search]:focus {
-    width: 400px;
-    transition: 0.4s;
+    transition: all 0.2s;
     background-color: #f1f1f1;
-    outline: none;
-    border: 1px solid #ccc;
+    outline: 5px solid #4287f5;
+    border: 1px solid #4287f5;
+}
+
+input[type=search]:disabled{
+    transition: 0.2s;
 }
 
 .items {
@@ -42,6 +45,17 @@ input[type=search]:focus {
     margin-top: 10px;
 }
 
+.item {
+    justify-content: space-between;
+    margin: 10px;
+    list-style-type: none;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.4s;
+    padding: 8px;
+    border-radius: 5px;
+    width: 120px;
+}
 .iconsItems {
     align-items: center;
     text-align: center;
@@ -109,21 +123,12 @@ input[type=search]:focus {
     font-size: 27px;
 }
 
-.item {
-    justify-content: space-between;
-    margin: 10px;
-    list-style-type: none;
-    cursor: pointer;
-    font-size: 20px;
-    transition: 0.4s;
-    padding: 8px;
-}
 
 .item:hover {
     /* background-image: linear-gradient(#ccc, purple); */
-    background-color: #ffa750;
+    background-color: #ccc;
     transition: 0.3s;
-    border-radius: 8px;
+    border-radius: 5px;
     color: black;
 }
 
@@ -178,13 +183,14 @@ img.logo-home {
 }
 
 .loginBtn, .signUpBtn {
-    border: 1px solid #ccc;
+    border: 1px solid #ffb366;
     color: white;
     padding: 10px;
     font-size: 17px;
     border-radius: 6px;
     margin: 5px;
     transition: 0.3s;
+    box-shadow: 5px 5px 10px #ffa750;
 }
 
 .loginBtn:hover, .signUpBtn:hover {
@@ -224,10 +230,11 @@ img {
     margin-top: 30px;
     margin-left: 30px;
     border-radius: 5px;
+    color: #000;
 }
 
 .off {
-    text-decoration: line-through    #fff;
+    text-decoration: line-through    #000;
     color: #fc3a4a;
 }
 
