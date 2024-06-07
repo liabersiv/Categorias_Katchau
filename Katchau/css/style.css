@@ -1,10 +1,32 @@
 * {
+    color: #000000;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #f9f9f9;
+    background: #fbfbfb;
+    /* background-image: url("bg.jpeg"); */
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+    /* background-position: 0% 0%; */
+}
+
+.logo-marca {
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+    max-width: 80px;
+}
 
 .container {
     justify-content: center;
@@ -15,7 +37,8 @@
 
 i {
     padding-right: 15px;
-} 
+    color: #fbfbfb;
+}
 
 input[type=search] {
     position: relative;
@@ -33,7 +56,7 @@ input[type=search]:focus {
     border: 1px solid #4287f5;
 }
 
-input[type=search]:disabled{
+input[type=search]:disabled {
     transition: 0.2s;
 }
 
@@ -56,6 +79,12 @@ input[type=search]:disabled{
     border-radius: 5px;
     width: 120px;
 }
+
+.dropdown-container {
+    display: none;
+}
+
+
 .iconsItems {
     align-items: center;
     text-align: center;
@@ -75,6 +104,7 @@ input[type=search]:disabled{
     color: #fff;
     transition: 0.2s;
 }
+
 .bi-person-circle:hover {
     color: #ffffffaf;
     transition: 0.2s;
@@ -85,6 +115,7 @@ input[type=search]:disabled{
     color: #fc3a4a;
     transition: 0.2s;
 }
+
 .bi-heart-fill:hover {
     color: #fc3a4ade;
     transition: 0.2s;
@@ -94,6 +125,7 @@ input[type=search]:disabled{
     color: #ccc;
     transition: 0.2s;
 }
+
 .bi-telephone-inbound-fill:hover {
     color: #ccccccd5;
     transition: 0.2s;
@@ -103,6 +135,7 @@ input[type=search]:disabled{
     color: #00c6a3;
     transition: 0.2s;
 }
+
 .bi-cart-fill:hover {
     color: #00c6a2d7;
     transition: 0.2s;
@@ -121,12 +154,13 @@ input[type=search]:disabled{
 .iconHeader {
     padding: 0;
     font-size: 27px;
+    color: #000000;
 }
 
 
 .item:hover {
     /* background-image: linear-gradient(#ccc, purple); */
-    background-color: #ccc;
+    background-color: #fbfbfb;
     transition: 0.3s;
     border-radius: 5px;
     color: black;
@@ -138,6 +172,7 @@ input[type=search]:disabled{
     margin-top: 10px;
     margin-left: 10px;
 }
+
 
 div.teste {
     display: flex;
@@ -167,7 +202,7 @@ img.logo-home {
     margin-left: 10px;
     margin-right: 90px;
     margin-bottom: 60px;
-}   
+}
 
 /* Login Buttons */
 
@@ -182,9 +217,10 @@ img.logo-home {
     justify-items: right;
 }
 
-.loginBtn, .signUpBtn {
+.loginBtn,
+.signUpBtn {
     border: 1px solid #ffb366;
-    color: white;
+    color: #000000;
     padding: 10px;
     font-size: 17px;
     border-radius: 6px;
@@ -193,7 +229,8 @@ img.logo-home {
     box-shadow: 5px 5px 10px #ffa750;
 }
 
-.loginBtn:hover, .signUpBtn:hover {
+.loginBtn:hover,
+.signUpBtn:hover {
     cursor: pointer;
     background-color: #ffa750;
     color: black;
@@ -215,6 +252,10 @@ img {
     border-radius: 20px;
 }
 
+.products-section {
+    margin-top: 100px;
+}
+
 .products {
     display: flex;
     flex-wrap: wrap;
@@ -234,7 +275,7 @@ img {
 }
 
 .off {
-    text-decoration: line-through    #000;
+    text-decoration: line-through #000;
     color: #fc3a4a;
 }
 
