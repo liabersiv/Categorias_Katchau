@@ -1,0 +1,124 @@
+.products-section {
+    margin-top: 100px;
+}
+
+/* .products-container {
+
+} */
+
+.title-section {
+    font-size: 2em;
+    display: flex;
+    margin-left: 50px;
+    border-left: 8px solid #db4444;
+    padding-left: 20px;
+    border-radius: 8px 8px 8px 8px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.product {
+    margin: 15px;
+    border-radius: 5px;
+}
+
+.product img {
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px;
+}
+
+.off {
+    text-decoration: line-through #b6b6b6;
+    color: #b6b6b6;
+    margin: 0;
+}
+
+.price {
+    font-size: 20px;
+    color: #db4444;
+    font-weight: bold;
+    margin: 0 0 10px 4px;
+}
+
+.btnPrice {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    background: #ccc;
+    color: #fbfbfb;
+    padding: 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1em;
+    transition: .2s;
+    margin: 16px 0 0 0;
+
+    &:hover {
+        background: #01b392;
+        box-shadow: 5px 5px 10px #01b392;
+
+    }
+}
+
+.stars {
+    display: flex;
+    align-items: center;
+}
+
+.stars svg {
+    margin: 0 4px 0 0;
+}
+
+.stars span {
+    color: #666666;
+}
+
+/* Grid dos produtos */
+.product:nth-child(1) {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.product:nth-child(2) {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.product:nth-child(3) {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.product:nth-child(4) {
+    grid-area: 1 / 4 / 2 / 5;
+}
+
+.product:nth-child(5) {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.product:nth-child(6) {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.product:nth-child(7) {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+.product:nth-child(8) {
+    grid-area: 2 / 4 / 3 / 5;
+}
