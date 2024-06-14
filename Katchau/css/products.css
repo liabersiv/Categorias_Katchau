@@ -134,3 +134,44 @@
 .product:nth-child(8) {
     grid-area: 2 / 4 / 3 / 5;
 }
+
+.promo-container {
+    display: flex;
+    align-items: center;
+}
+
+.promo-container .title-section {
+    margin-right: 30px;
+}
+
+.promo-container span {
+    color: #ccc;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.image-container {
+    display: flex;
+}
+
+.image-container img {
+    z-index: 1;
+    position: relative;
+}
+
+.descont-container {
+    display: flex;
+    justify-content: right;
+}
+
+.descont {
+    position: absolute;
+    z-index: 2;
+    color: #fbfbfb;
+    background: #db4444;
+    max-height: 26px;
+    border-radius: 6px;
+    margin: 20px 16px 0 20px;
+    padding-right: 2px;
+    padding-left: 2px;
+}

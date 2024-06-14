@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Carrinho embarcado</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+</head>
+<body>
+    
+    <div class="cart-container">
+        <box-icon name='cart' size="md" id="cart"></box-icon>
+    </div>
+
+    <div class="product-container">
+        <div class="product">
+            <span class="title">Titulo do produto</span>
+            <span class="overline">R$ 300</span>
+            <span class="price">R$ 200</span>
+            <button type="button" id="btn" onclick="adicionarAoCarrinho()">Adionar ao carrinho</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
