@@ -39,12 +39,23 @@
     transition: .2s;
 }
 
+.product img:focus {
+    transform: scale(1.1);
+}
+
 .product img {
     /* border-radius: 5px; */
     border-radius: 17%;
     box-shadow: 5px 5px 10px;
     background-repeat: no-repeat;
     background-size: cover;
+    cursor: pointer;
+    z-index: 1;
+    position: relative;
+}
+
+.image-container {
+    display: flex;
 }
 
 .title {
@@ -150,14 +161,6 @@
     font-weight: bold;
 }
 
-.image-container {
-    display: flex;
-}
-
-.image-container img {
-    z-index: 1;
-    position: relative;
-}
 
 .descont-container {
     display: flex;
