@@ -20,7 +20,7 @@ span {
     margin: 0 0 10px 0;
 }
 
-input {
+.footer-input {
     margin: 0 0 10px 0;
     border: 1px solid #ccc;
     padding: 10px;
@@ -121,4 +121,5 @@ input {
     border-top: 1px solid #ccc;
     padding: 8px 0 0 0;
     color: #ccc;
+    font-size: 12px;
 }
