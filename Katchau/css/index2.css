@@ -161,3 +161,11 @@ button {
     font-size: 20px;
     color: #fff;
 }
+
+/* Media Querys */
+
+@media (width >= 1400px) {
+    .last {
+        display: none;
+    }
+}
