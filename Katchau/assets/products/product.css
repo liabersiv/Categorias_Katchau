@@ -66,7 +66,7 @@ a {
 .logo-marca {
     border-radius: 5px;
     height: 100px;
-    width: 100%;
+    width: 177px;
 }
 
 .div-search {
@@ -184,6 +184,7 @@ img {
 .container {
     display: flex;
     color: #ffffff;
+    margin: 0 0 100px 0;
 }
 
 .title {
@@ -194,14 +195,15 @@ img {
 .off {
     text-decoration: line-through #b6b6b6;
     color: #b6b6b6;
-    margin: 0;
+    margin: 0 0 6px 0;
+    font-size: 16px;
 }
 
 .price {
     font-size: 20px;
     color: #db4444;
     font-weight: bold;
-    margin: 0 0 10px 4px;
+    margin: 0 0 10px 0;
 }
 
 .sell {
@@ -221,5 +223,51 @@ img {
 .recommended-icon {
     margin: 0;
     padding: 0;
+    background: #fbfbfb;
+    color: #000;
+    border-radius: 20px;
+}
 
+.recommended-container {
+    display: flex;
+    align-items: center;
+    border-radius: 2px;
+    width: 140px;
+    background: #fbfbfb;
+}
+
+.stars-container {
+    display: flex;
+    align-items: center;
+    margin: 0 0 10px 0;
+}
+
+.stars {
+    display: flex;
+    align-items: center;
+    margin: 0 0 10px 0;
+}
+
+.rate {
+    margin: 4px 4px 0 0;
+}
+
+.number-rate {
+    color: #ccc;
+    font-size: 14px;
+}
+
+.desc {
+    width: 500px;
+}
+
+.desc p {
+    line-height: 24px;
+}
+
+/* Hovers */
+
+.hover-simple:hover {
+    color: #FD7014;
+    transition: .2s;   
 }

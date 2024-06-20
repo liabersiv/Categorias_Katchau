@@ -169,3 +169,8 @@ button {
         display: none;
     }
 }
+
+.hover-simple:hover {
+    color: #FD7014;
+    transition: .2s;
+}
