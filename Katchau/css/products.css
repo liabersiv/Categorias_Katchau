@@ -156,9 +156,12 @@
 }
 
 .promo-container span {
-    color: #ccc;
-    font-size: 26px;
+    color: #db4444;
+    font-size: 28px;
     font-weight: bold;
+    background: #ccc;
+    padding: 8px 10px;
+    border-radius: 10px;
 }
 
 
@@ -180,5 +183,5 @@
 }
 
 .product-promo {
-    margin: 200px 0 0 0;
+    margin: 140px 0 200px 0;
 }
