@@ -76,7 +76,7 @@ footer span {
     margin: 0 20px 0 0;
 }
 
-.support i {
+.icon-footer-support {
     margin: 0 10px 0 0;
 }
 
@@ -91,7 +91,7 @@ footer span {
     text-align: center;
 }
 
-.input-container i {
+/* .input-container (i) {
     position: absolute;
     right: 650px;
     margin: 0 0 10px 0;
@@ -101,7 +101,7 @@ footer span {
         color: #46d40e;
         transform: .2s;
     }
-}
+} */
 
 .account {
     display: flex;
