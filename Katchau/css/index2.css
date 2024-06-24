@@ -174,6 +174,12 @@ button {
     }
 }
 
+@media (width < 1400px) {
+    .product-query {
+        display: none;
+    }
+}
+
 .hover-simple:hover {
     color: #FD7014;
     transition: .2s;

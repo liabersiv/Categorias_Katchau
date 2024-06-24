@@ -271,3 +271,24 @@ img {
     color: #FD7014;
     transition: .2s;   
 }
+
+.product-btn {
+    cursor: pointer;
+    width: 350px;
+    height: 50px;
+    background: #FD7014;
+    box-shadow: 2px 2px 15px #FD7014;
+    padding: 10px;
+    border-radius: 8px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 7px 0 0 0;
+    transition: .2s ease-in-out;
+
+    &:hover {
+        background: #FD7014;
+        /* box-shadow: 2px 2px 5px #01b392; */
+        transition: .2s ease-in-out;
+    }
+}
