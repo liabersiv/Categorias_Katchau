@@ -165,6 +165,10 @@ button {
 /* Media Querys */
 
 @media (width >= 1400px) {
+    .products {
+        max-width: 1500px;
+    }
+
     .last {
         display: none;
     }
