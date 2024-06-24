@@ -21,9 +21,9 @@ a {
     display: inline-block;
     position: relative;
     color: #000000;
-  }
-  
-  .hover-underline-animation::after {
+}
+
+.hover-underline-animation::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -34,14 +34,14 @@ a {
     background-color: #ffc940;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
-  }
-  
-  .hover-underline-animation:hover::after {
+}
+
+.hover-underline-animation:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
-  }
+}
 
-  /* Styles for Home Page */
+/* Styles for Home Page */
 
 .navbar {
     display: flex;
@@ -164,7 +164,7 @@ button {
 
 /* Media Querys */
 
-@media (width >= 1400px) {
+@media (width >=1400px) {
     .last {
         display: none;
     }
@@ -212,7 +212,7 @@ img {
     margin: 0 0 14px 0;
 }
 
-.recommended-content{
+.recommended-content {
     color: #000000;
     background: #fbfbfb;
     padding: 4px 8px;
@@ -269,7 +269,7 @@ img {
 
 .hover-simple:hover {
     color: #FD7014;
-    transition: .2s;   
+    transition: .2s;
 }
 
 .product-btn {
@@ -277,7 +277,6 @@ img {
     width: 350px;
     height: 50px;
     background: #FD7014;
-    box-shadow: 2px 2px 15px #FD7014;
     padding: 10px;
     border-radius: 8px;
     color: #ffffff;
@@ -287,8 +286,10 @@ img {
     transition: .2s ease-in-out;
 
     &:hover {
-        background: #FD7014;
+        background: #fd7114f5;
         /* box-shadow: 2px 2px 5px #01b392; */
         transition: .2s ease-in-out;
+        box-shadow: 2px 2px 15px #FD7014;
+
     }
 }
