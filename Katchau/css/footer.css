@@ -123,3 +123,8 @@ footer span {
     color: #ccc;
     font-size: 12px;
 }
+
+footer a:hover {
+    color: #FD7014;
+    transition: .2s;
+}
