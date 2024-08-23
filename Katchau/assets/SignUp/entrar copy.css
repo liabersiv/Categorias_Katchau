@@ -42,11 +42,7 @@ a {
 
 .sign-header-container {
     display: flex;
-<<<<<<< HEAD
     justify-content: center;
-=======
-    justify-content: space-around;
->>>>>>> 9d4427df2429406a330a1315cfe71252cfa88685
     align-items: center;
 }
 
@@ -70,38 +66,23 @@ a {
 }
 
 .signUp-btn {
-<<<<<<< HEAD
     border: 2px solid #1d2029;
     background-color: #393E46;
     border-radius: 5px;
     padding: 8px 22px;
-    transition: 0.3s;
+    transition: 0.5s;
     cursor: pointer;
-    width: 210px;
+    width: 200px;
     color: #ccc;
     font-weight: bold;
 }
 
 .signUp-btn:hover {
-    transition: 0.3s;
-    background-color: #fc8613;
-    border: 2px solid #b64a02;
-    color: #000;
-=======
-    border: 2px solid #FD7014;
-    background-color: #fc9856;
-    border-radius: 15px;
-    padding: 8px 22px;
-    transition: 0.5s;
-    cursor: pointer;
-}
-
-.signUp-btn:hover {
-    border-radius: 13px;
+    border-radius: 10px;
     transition: 0.5s;
     background-color: #f77c2a;
     border: 2px solid #b64a02;
->>>>>>> 9d4427df2429406a330a1315cfe71252cfa88685
+    color: #000;
 }
 
 .input-container {
@@ -155,11 +136,7 @@ a {
 .signup-btn {
     display: flex;
     justify-content: center;
-<<<<<<< HEAD
     margin: 20px 0 10px 0;
-=======
-    margin: 40px 0;
->>>>>>> 9d4427df2429406a330a1315cfe71252cfa88685
 }
 
 .cadastrar-btn {
@@ -190,12 +167,9 @@ a {
     border: none;
     background: none;
     font-size: 0.98rem;
-<<<<<<< HEAD
 }
 
 .btn-container {
     display: flex;
     justify-content: center;
-=======
->>>>>>> 9d4427df2429406a330a1315cfe71252cfa88685
 }
