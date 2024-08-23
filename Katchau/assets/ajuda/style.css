@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+    margin: 0;
+    height: 100vh;
+    background: #222831;
+}
+
+#page {
+    display: flex;
+    justify-content: center;
+}
+
+.header-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-title h2 {
+    color: #f1f1f1;
+    font-weight: 600;
+    width: 738px;
+}
