@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Esqueceu Senha</title>
     <link rel="stylesheet" href="esqueceu-senha.css">
-    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="../../css/navbar.css">
     <link rel="stylesheet" href="../../css/footer.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
@@ -56,18 +56,22 @@
         <div class="container">
             <div class="container-forgot-psw">
                 <div class="title">
-                    <h1>Redefinição de <br> senha!</h1>
+                    <h1>Redefinição de senha!</h1>
                 </div>
                 <div class="desc">
-                    <p>Informe um email e enviaremos um link <br> para recuperação da sua senha.</p>
+                    <p>Informe um email e enviaremos um link para recuperação da sua senha.</p>
                 </div>
             </div>
-
+            
             <div class="container-form">
-                <form action="recover password">
+                <form action="../esqueceu-senha/link-enviado.html">
 
-                    <input type="text" name="" id="" placeholder="Insira seu e-mail">
+                    <input type="text" name="" id="" placeholder="Insira seu e-mail" required>
+
+                    <button type="submit">Enviar</button>
                 </form>
+                <span>Você irá receber um e-mail no endereço informado acima <br> contendo o procedimento para criar uma
+                    nova senha para esse usuário</span>
             </div>
         </div>
 
