@@ -94,3 +94,10 @@ a {
 .icon-footer {
     margin-right: 10px;
 }
+
+.account-container img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 1px solid #000;
+}

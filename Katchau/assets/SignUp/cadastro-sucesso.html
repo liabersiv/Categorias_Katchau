@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up | Katchau</title>
-    <link rel="stylesheet" href="cadastro.css">
-    <link rel="stylesheet" href="navbar.css">
+    <title>Cadastro Realizado Com Sucesso | Katchau</title>
+    <link rel="stylesheet" href="cadastro-sucesso.css">
+    <link rel="stylesheet" href="../../css/navbar.css">
     <link rel="stylesheet" href="../../css/footer.css">
+
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="shortcut icon" href="../../img/logo-katchau-removebg-preview.png" type="image/x-icon">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- NavBar -->
+    <!-- Navbar -->
     <header>
         <nav class="navbar">
             <div class="logomarca">
@@ -42,68 +46,34 @@
                 <button>
                     <a href="#" class="icon material-symbols-outlined">contact_support</a>
                 </button>
-                <button class="signUpBtn"><a href="#">Cadastrar</a></button>
-                <button class="loginBtn"><a href="#">Entrar</a></button>
+                <button class="signUpBtn"><a href="../SignUp/cadastro.html">Cadastrar</a></button>
+                <button class="loginBtn"><a href="../SignUp/entrar-kayan.html">Entrar</a></button>
             </nav>
         </nav>
     </header>
+    <!-- Fim Navbar -->
 
-    <!-- Fim NavBar -->
+    <!-- Main Content -->
+    <main id="page">
+        <main id="page">
+            <div class="icon-container">
+                <img src="../../img/icons/check-icon.png" alt="Check Icon">
+            </div>
 
-
-    <main class="cadastrar-container">
-        <div class="signup-container">
-            <form action="cadastro-sucesso.html">
-                <div class="form-header">
-                    <h2 class="form-header-title">Cadastrar</h2>
-                    <div class="button-container">
-                        <button class="signIn-btn">
-                            <a href="entrar-kayan.html">Entrar</a>
-                        </button>
-                    </div>
+            <div class="content">
+                <div class="p-container">
+                    <p>Cadastro Realizado com SUCESSO!</p>
                 </div>
 
-                <div class="form-container1">
-                    <label for="name">
-                        <div class="input-container">
-                            <input class="inputs1" type="text" name="primeironome" placeholder="Primeiro Nome" required>
-                            <i class="material-symbols-outlined icon-input">id_card</i>
-                        </div>
-                        <div class="input-container">
-                            <input class="inputs1" type="text" name="sobrenome" placeholder="Sobrenome" required>
-                            <i class="material-symbols-outlined icon-input">id_card</i>
-                        </div>
-                    </label>
-                    <label for="email-and-psw">
-                        <div class="input-container">
-                            <input class="inputs1" type="email" name="email" placeholder="E-mail" required>
-                            <i class="material-symbols-outlined icon-input">alternate_email</i>
-                        </div>
-                        <div class="input-container">
-                            <input class="inputs1" type="password" name="psw" placeholder="Senha" required>
-                            <i class="material-symbols-outlined icon-input">lock</i>
-                        </div>
-                    </label>
-
-                    <div class="input-checkbox-container">
-                        <input class="remember_input" type="checkbox" name="remember" id="rememberme">
-                        <label class="remember_label" for="rememberme">Lembrar de mim?</label>
-                    </div>
-
-                    <div class="signup-btn">
-                        <button class="cadastrar-btn">Cadastrar</button>
-                    </div>
+                <div class="link-container">
+                    <a href="entrar-kayan.html">Entrar na minha conta</a>
                 </div>
-            </form>
-        </div>
+            </div>
+        </main>
     </main>
-
-
-
-
+    <!-- Fim Main Content -->
 
     <!-- Footer -->
-
     <footer>
         <div class="footer-container">
             <div class="footer-content">
@@ -126,18 +96,18 @@
                 </div>
                 <div class="account">
                     <h2>Sua Conta</h2>
-                    <span>Minha conta</span>
-                    <span>Entrar / Cadastrar</span>
-                    <span>Carrinho</span>
-                    <span>Favoritos</span>
+                    <span><a href="assets/profile/index.html">Minha conta</a></span>
+                    <span><a href="assets/SignUp/entrar-kayan.html">Entrar / Cadastrar</a></span>
+                    <span><a href="#">Carrinho</a></span>
+                    <span><a href="assets/Favoritos/favoritos.html">Favoritos</a></span>
                     <span><a href="index2.html" class="hover-simple">Início</a></span>
                 </div>
                 <div class="quick-links">
                     <h2>Links Rápidos</h2>
-                    <span>Política de privacidade</span>
-                    <span>Termos de uso</span>
-                    <span>FAQ</span>
-                    <span>Contato</span>
+                    <span><a href="#">Política de privacidade</a></span>
+                    <span><a href="#">Termos de uso</a></span>
+                    <span><a href="#">FAQ</a></span>
+                    <span><a href="assets/contato/index.html">Contato</a></span>
                 </div>
             </div>
         </div>
@@ -145,6 +115,8 @@
     <div class="copyright-container">
         <span>&copy Copyright Katchau 2024 Todos os direitos reservados</span>
     </div>
+    <!-- Fim Footer -->
+
 </body>
 
 </html>
