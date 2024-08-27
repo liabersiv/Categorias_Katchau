@@ -1,0 +1,96 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #222831;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.profile-card {
+    background-color: #393E46;
+    width: 300px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.profile-pic {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 20px;
+    cursor: pointer;
+    border: 2px solid #FD7014;
+}
+
+.profile-placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #EEEEEE;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.editable {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #FD7014;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    margin-top: 15px;
+    color: #EEEEEE;
+}
+
+.link i {
+    font-size: 24px;
+    margin-right: 15px;
+    color: #FD7014;
+}
+
+.link span {
+    font-size: 20px;
+}
+
+.link:hover {
+    color: #FD7014;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.search-icon {
+    color: #000;
+}
+
+.icon-footer {
+    margin-right: 10px;
+}
