@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="../../css/navbar.css">
     <link rel="stylesheet" href="../../css/footer.css">
 
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+    <!-- Remix Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
@@ -55,10 +59,189 @@
     <!-- Fim Navbar -->
 
     <main id="page">
-        <details>
-            <summary>Teste</summary>
-            <p>Conteudo do teste</p>
-        </details>
+
+        <div class="container">
+            <div class="accordion__wrapper">
+                <h1 class="accordion__title">Perguntas Frequentes (FAQ)</h1>
+
+                <!-- Accordion 1  -->
+                <div class="accordion">
+                    <div class="accordion__header">
+                        <h2 class="accordion__question">Quais tipos de produtos vocês vendem?</h2>
+                        <span class="accordion__icon">
+                            <i id="accordion-icon" class="ri-add-line"></i>
+                        </span>
+                    </div>
+                    <div class="accordion__content">
+                        <p class="accordion__answer">Na Katchau, oferecemos uma ampla gama de produtos tecnológicos
+                            focados em computadores, incluindo processadores, placas-mãe, memórias RAM, SSDs, placas de
+                            vídeo, periféricos como mouses e teclados, além de acessórios e softwares. Nossos produtos
+                            são selecionados para atender tanto a necessidades profissionais quanto a pessoais.</p>
+                    </div>
+                </div>
+
+                <!-- Accordion 2  -->
+                <div class="accordion">
+                    <div class="accordion__header">
+                        <h2 class="accordion__question">Como posso encontrar o produto certo para meu computador?</h2>
+                        <span class="accordion__icon">
+                            <i id="accordion-icon" class="ri-add-line"></i>
+                        </span>
+                    </div>
+                    <div class="accordion__content">
+                        <p class="accordion__answer">Você pode usar nosso filtro de busca para especificar suas
+                            necessidades, como o tipo de componente ou a marca desejada. Se precisar de ajuda adicional,
+                            nosso guia de compatibilidade está disponível na seção de suporte do site. Também oferecemos
+                            consultoria personalizada através do nosso chat ao vivo.</p>
+                    </div>
+                </div>
+
+                <!-- Accordion 3 -->
+                <div class="accordion">
+                    <div class="accordion__header">
+                        <h2 class="accordion__question">Vocês oferecem garantia nos produtos?</h2>
+                        <span class="accordion__icon">
+                            <i id="accordion-icon" class="ri-add-line"></i>
+                        </span>
+                    </div>
+                    <div class="accordion__content">
+                        <p class="accordion__answer">Sim, todos os nossos produtos vêm com garantia do fabricante. Além
+                            disso, garantimos a troca ou devolução de produtos dentro de um prazo específico, conforme
+                            descrito em nossa política de devolução. Para mais detalhes, consulte a nossa página de
+                            Política de Garantia e Devolução.</p>
+                    </div>
+                </div>
+
+                <!-- Accordion 4 -->
+                <div class="accordion">
+                    <div class="accordion__header">
+                        <h2 class="accordion__question">Como posso rastrear meu pedido?</h2>
+                        <span class="accordion__icon">
+                            <i id="accordion-icon" class="ri-add-line"></i>
+                        </span>
+                    </div>
+                    <div class="accordion__content">
+                        <p class="accordion__answer">Após a confirmação do seu pedido, você receberá um e-mail com um
+                            número de rastreamento e um link para acompanhar a entrega. Você também pode verificar o
+                            status do seu pedido na seção "Meus Pedidos" da sua conta no nosso site.</p>
+                    </div>
+                </div>
+
+                <!-- Accordion 5 -->
+                <div class="accordion">
+                    <div class="accordion__header">
+                        <h2 class="accordion__question">Quais são as opções de pagamento disponíveis?</h2>
+                        <span class="accordion__icon">
+                            <i id="accordion-icon" class="ri-add-line"></i>
+                        </span>
+                    </div>
+                    <div class="accordion__content">
+                        <p class="accordion__answer">Aceitamos diversos métodos de pagamento, incluindo cartões de
+                            crédito, débito, transferências bancárias e pagamentos via plataformas digitais como PayPal
+                            e Pix. A segurança das suas transações é nossa prioridade.</p>
+                    </div>
+                </div>
+
+                <!-- Accordion 6 -->
+                <div class="accordion">
+                    <div class="accordion__header">
+                        <h2 class="accordion__question">O que fazer se eu receber um produto danificado ou incorreto?
+                        </h2>
+                        <span class="accordion__icon">
+                            <i id="accordion-icon" class="ri-add-line"></i>
+                        </span>
+                    </div>
+                    <div class="accordion__content">
+                        <p class="accordion__answer">Se você receber um produto danificado ou incorreto, entre em
+                            contato conosco imediatamente através do nosso suporte ao cliente. Oferecemos soluções
+                            rápidas, que podem incluir a troca do produto ou um reembolso completo. Lembre-se de enviar
+                            fotos do item e da embalagem para facilitar o processo.</p>
+                    </div>
+                </div>
+
+                <!-- Accordion 7 -->
+                <div class="accordion">
+                    <div class="accordion__header">
+                        <h2 class="accordion__question"> Posso cancelar ou modificar meu pedido após a confirmação?
+                        </h2>
+                        <span class="accordion__icon">
+                            <i id="accordion-icon" class="ri-add-line"></i>
+                        </span>
+                    </div>
+                    <div class="accordion__content">
+                        <p class="accordion__answer">Se precisar cancelar ou modificar seu pedido, entre em contato
+                            conosco o mais rápido possível. As alterações são possíveis somente antes do envio do
+                            pedido. Uma vez que o pedido esteja em processo de envio, não será possível realizar
+                            alterações.</p>
+                    </div>
+                </div>
+
+                <!-- Accordion 8 -->
+                <div class="accordion">
+                    <div class="accordion__header">
+                        <h2 class="accordion__question"> Como posso entrar em contato com o suporte ao cliente?
+                        </h2>
+                        <span class="accordion__icon">
+                            <i id="accordion-icon" class="ri-add-line"></i>
+                        </span>
+                    </div>
+                    <div class="accordion__content">
+                        <p class="accordion__answer">Você pode entrar em contato com nosso suporte ao cliente através do
+                            chat ao vivo disponível no site, por e-mail ou pelo telefone que está listado na nossa
+                            página de Contato. Estamos disponíveis para ajudar com qualquer dúvida ou problema que você
+                            possa ter.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-content">
+                    <div class="exclusive">
+                        <h2>Exclusivo</h2>
+                        <h3>Se inscreva!</h3>
+                        <span>Garanta 10% de desconto no primeiro pedido</span>
+                        <div class="input-container">
+                            <input class="footer-input" type="email" placeholder="Insira seu e-mail" required>
+                            <!-- <i class="material-symbols-outlined">send</i> -->
+                            <button type="button" class="btn">ENVIAR</button>
+                        </div>
+                    </div>
+                    <div class="support">
+                        <h2>Suporte</h2>
+                        <span><i class="material-symbols-outlined icon-footer-support">phone_in_talk</i>(11)
+                            98996-9652</span>
+                        <span><i
+                                class="material-symbols-outlined icon-footer-support">alternate_email</i>katchau.support@gmail.com</span>
+                    </div>
+                    <div class="account">
+                        <h2>Sua Conta</h2>
+                        <span><a href="../profile/index.html">Minha conta</a></span>
+                        <span><a href="../SignUp/entrar-kayan.html">Entrar / Cadastrar</a></span>
+                        <span><a href="../carrinho/carrinho.html">Carrinho</a></span>
+                        <span><a href="../Favoritos/favoritos.html">Favoritos</a></span>
+                        <span><a href="../../index2.html" class="hover-simple">Início</a></span>
+                    </div>
+                    <div class="quick-links">
+                        <h2>Links Rápidos</h2>
+                        <span><a href="../politica-de-privacidade/politica-de-privacidade.html">Política de
+                                privacidade</a></span>
+                        <span><a href="../termos-de-uso/termos-de-uso.html">Termos de uso</a></span>
+                        <span><a href="../faq/faq.html">FAQ</a></span>
+                        <span><a href="../contato/index.html">Contato</a></span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="copyright-container">
+            <span>&copy Copyright Katchau 2024 Todos os direitos reservados</span>
+        </div>
+        <!-- Fim Footer -->
+
+
+        <script src="script.js"></script>
     </main>
 </body>
 

@@ -26,12 +26,16 @@ body {
     justify-content: center;
 }
 .content {
-    background: #ccc;
+    background: #fff;
     border-radius: 6px;
     padding: 20px 30px;
-    color: #000;
+    color: #545d7a;
     font-size: 18px;
     max-width: 800px;
     display: flex;
     justify-content: center;
 } 
+
+.container p {
+    text-align: justify;
+}
