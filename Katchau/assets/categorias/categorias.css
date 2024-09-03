@@ -20,6 +20,10 @@ body {
     background: #222831;
 }
 
+#page {
+    margin: 0 0 50px 0;
+}
+
 .container {
     margin: 50px 0px 0 100px;
     display: flex;
@@ -42,7 +46,7 @@ body {
 
 
     &:hover {
-        transform: scale(1.02);
+        transform: scale(0.98);
         background: #fff;
         filter: drop-shadow(5px 5px 10px #f77c2a);
 
@@ -52,18 +56,26 @@ body {
     }
 }
 
+.container__categorie img  {
+    height: 200px;
+    width: 200px;
+}
+
+.caixa-de-som img {
+    width: 180px;
+    height: 150px;
+}
+
+.categoria__tv img {
+    width: 200px;
+    height: 150px;
+}
+
 .container__categorie:nth-child(2) {
     img {
         width: 150px;
         height: 150px;
     }
-}
-
-
-
-.container__categorie img {
-    height: var(--size-img-h);
-    width: var(--size-img-w);
 }
 
 .title__categorie {
