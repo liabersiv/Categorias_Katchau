@@ -6,6 +6,7 @@
 - A section de produtos em destaque ou produtos em geral, pode copiar o codigo que eu fiz na atividade de PW-I dos Sneakers
 
 
+=> Banner de: natal, halloween e dia das crianças !important
 => Paginas dos produtos
 => Scroll page personalizado
 => Sistema de carrinho
