@@ -58,7 +58,7 @@ a {
     content: '';
     display: block;
     width: 80px;
-    height: 5px    ;
+    height: 5px;
     margin: 0 auto;
     background-color: #FD7014;
     position: absolute;
@@ -78,11 +78,45 @@ a {
 }
 
 .signUp-btn:hover {
+    cursor: pointer;
     border-radius: 10px;
     transition: 0.5s;
     background-color: #f77c2a;
     border: 2px solid #b64a02;
     color: #000;
+}
+
+.signUp-btn button {
+    color: #ccc;
+    cursor: pointer;
+}
+
+.signUp__btn {
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #222831;
+    width: 240px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: .3s ease;
+}
+
+.signUp__btn:hover {
+    background-color: #f77c2a;
+    transition: .3s ease;
+    transform: scale(0.95);
+    box-shadow: 2px 2px 5px #f8802f;
+    border: none;
+    .btn__signUp {
+        color: #fff;
+
+    }
+}
+
+.btn__signUp {
+    cursor: pointer;
+    color: #ccc;
 }
 
 .input-container {
@@ -146,15 +180,23 @@ a {
     border-radius: 7px;
     transition: 0.5s;
     cursor: pointer;
+    width: 240px;
+
+    &:hover {
+        box-shadow: 2px 2px 5px #f77c2a;
+        transform: scale(0.95);
+        color: #fff;
+    }
 }
 
+/* 
 .cadastrar-btn:hover {
     transition: 0.5s;
     background-color: rgb(240, 138, 70);
     padding: 10px 74px;
     margin-right: 47%;
     margin-left: 47%;
-}
+} */
 
 .esqueceu-senha-container {
     display: flex;
