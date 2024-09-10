@@ -1,0 +1,131 @@
+<html></html>
+<head>
+    <title>Help Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 60%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 24px;
+            color: #333;
+        }
+        .search-bar {
+            display: flex;
+            margin: 20px 0;
+        }
+        .search-bar input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px 0 0 4px;
+            font-size: 16px;
+        }
+        .search-bar button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #ccc;
+            border-radius: 0 4px 4px 0;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .section {
+            margin: 20px 0;
+        }
+        .section h2 {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .item {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            background-color: #f9f9f9;
+            position: relative;
+        }
+        .item i {
+            font-size: 24px;
+            margin-right: 10px;
+            color: #ffcc00;
+        }
+        .item a {
+            font-size: 16px;
+            color: #007bff;
+            text-decoration: none;
+            flex: 1;
+        }
+        .item p {
+            font-size: 14px;
+            color: #666;
+            margin: 0;
+        }
+        .item .arrow {
+            font-size: 16px;
+            color: #ccc;
+            position: absolute;
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Com o que podemos ajudar?</h1>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar em Contato">
+            <button>Buscar</button>
+        </div>
+        <div class="section">
+            <h2>Compras</h2>
+            <div class="item">
+                <i class="fas fa-shopping-bag"></i>
+                <div>
+                    <a href="#">Administrar e cancelar compras</a>
+                    <p>Pagar, rastrear envios, alterar, reclamar ou cancelar compras.</p>
+                </div>
+                <i class="fas fa-chevron-right arrow"></i>
+            </div>
+            <div class="item">
+                <i class="fas fa-undo"></i>
+                <div>
+                    <a href="#">Devoluções e reembolsos</a>
+                    <p>Devolver um produto ou consultar por estorno de compra.</p>
+                </div>
+                <i class="fas fa-chevron-right arrow"></i>
+            </div>
+            <div class="item">
+                <i class="fas fa-question-circle"></i>
+                <div>
+                    <a href="#">Perguntas frequentes sobre compras</a>
+                </div>
+                <i class="fas fa-chevron-right arrow"></i>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Vendas</h2>
+            <div class="item">
+                <i class="fas fa-chart-line"></i>
+                <div>
+                    <a href="#">Reputação, vendas e envios</a>
+                    <p>Informações sobre sua reputação, envio, pagamento ou devolução.</p>
+                </div>
+                <i class="fas fa-chevron-right arrow"></i>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
