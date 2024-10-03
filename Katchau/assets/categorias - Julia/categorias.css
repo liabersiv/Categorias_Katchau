@@ -9,7 +9,9 @@ body {
 }
 
 :root {
-    --bgContainer: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(57, 62, 70, 1) 0%, rgba(34, 40, 49, 1) 100%);
+    --bgContainer: linear-gradient(90deg, rgba(33,37,43,1) 0%, rgba(54,54,54,1) 50%, rgba(79,79,79,1) 87%);
+    --cinzaclaro: #393E46;
+    --cinzaescuro: #222831;
     --laranja: #FD7014;
 }
 
@@ -53,14 +55,20 @@ h2{
     width: 400px;
     height: 165px;
     border-radius: 30px;
-    background-color: #FD7014;
-    border: 2px solid #6666;
-    margin: 30px;
+    background: var(--bgContainer);
+    border: 1px solid #454545;
+
+    margin-bottom: 20px;
 }
 
 .containerdupla{
     display: flex;
     justify-content: space-around;
+}
+
+img {
+    width: 30%;
+    height: auto;
 }
 
 .containertriplo{    
