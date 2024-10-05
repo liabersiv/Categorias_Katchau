@@ -30,6 +30,10 @@ h2 {
     font-size: 28px;
 }
 
+hr{
+    margin-bottom: 20px;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -45,13 +49,14 @@ h2 {
 
 .header a:hover {
     color: var(--laranja);
-    transition: 0.2s;
+    transition: 0.3s ease-in;
 }
 
 .containerCategorias {
     display: flex;
     padding: 25px;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
 }
 
 p{
@@ -60,7 +65,11 @@ p{
     display: flex;
     line-height: 1.5;
     text-align: center;
-    width: 80px;
+    width: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container {
@@ -76,7 +85,7 @@ p{
     border-radius: 30px;
     background: var(--bgContainer);
     border: 1px solid #454545;
-
+    margin: 0px 20px 0px 5px;   
 }
 
 .container:hover {
@@ -139,9 +148,8 @@ p{
 }
 
 #armazenamento{
-    max-width: 210px;
+    max-width: 200px;
     transform: rotate(15deg);
-    margin-left: 50px;
 }
 
 #cooler{
@@ -172,12 +180,16 @@ p{
 
 #skins{
     max-width: 250px;
+    transform: translateX(50px);
 }
 
 #cadeira{
     max-width: 100px;
 }
 
+#armazenamentoP p{
+    transform: translateX(27px);
+}
 /*  */
 
 /* Ja resetei o css pra vc, agora so estilize!! Boa programação!! */

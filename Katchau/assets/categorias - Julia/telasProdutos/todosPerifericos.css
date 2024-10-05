@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bgContainer: linear-gradient(90deg, rgba(33, 37, 43, 1) 0%, rgba(54, 54, 54, 1) 50%, rgba(79, 79, 79, 1) 87%);
+    --cinzaclaro: #393E46;
+    --cinzaescuro: #222831;
+    --laranja: #FD7014;
+    --laranjaTransparente: rgba(253, 112, 20, 0.4);
+}
+
+main {
+    padding: 30px;
+    background-color: #222831;
+    color: #FFFF;
+}
+
+h1 {
+    font-size: 33px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+hr{
+    border: 0.5px solid #666666;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 15px 0px 15px;
+}
+
+.header a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline;
+    font-size: 17px;
+}
+
+.header a:hover {
+    color: var(--laranja);
+    transition: 0.3s ease-in;
+}
+
+.containerProdutos{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    cursor: default;
+    padding: 0px 25px;
+    width: 350px;
+    height: 570px;
+    background-color: #393E46;
+    border-radius: 25px;
+    border: 1px solid #454e59;
+
+}
+
+.container p{
+    display: flex;
+}
+
+.stars, button, img{
+    cursor: pointer;
+}
+
+.container button{
+    color: #cad2d7;
+    width: 300px;
+    height: 45px;
+    font-size: 15px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 2px solid #222831;
+}
+
+.container button:hover{
+    background-color: #222831;
+    transition: 0.4s;
+}
+
+p{
+    font-size: 20px;
+    line-height: 1.5;
+    color: #e3e8ea;
+}
+
+.preco span{
+    font-weight: bold;
+    color: #a4b1bc;
+}
+
+#monitorSamsungFreesync{
+    width: 310px;
+    margin-top: 28px;
+    margin-bottom: 30px;
+}
+
+#monitorLG{
+    margin: 0px;
+    width: 300px;
+}
+
+#monitorOdysseyG30{
+    width: 350px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    transform: translateX(-26px);
+}
+
+#headsetLogitechG733{
+    width: 200px;
+}
+
+.stars{
+    margin-bottom: 8px;
+}
