@@ -30,8 +30,8 @@ h2 {
     font-size: 28px;
 }
 
-hr{
-    border: 0.5px solid #666666;
+hr {
+    border: 1px solid #888888;
 }
 
 .header {
@@ -53,85 +53,84 @@ hr{
     transition: 0.3s ease-in;
 }
 
-.containerProdutos{
+.containerProdutos {
     display: flex;
     justify-content: space-around;
     padding: 30px;
 }
 
-img{
+img {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.container{
+.container {
     cursor: default;
     padding: 0px 25px;
     width: 350px;
-    height: 570px;
-    background-color: #393E46;
+    height: 585px;
     border-radius: 25px;
-    border: 1px solid #454e59;
-
 }
 
-.container p{
+.container p {
     display: flex;
 }
 
-.stars, button, img{
+.stars,
+button,
+img {
     cursor: pointer;
 }
 
-.container button{
-    color: #cad2d7;
+.container button {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     width: 300px;
-    height: 45px;
-    font-size: 15px;
-    border-radius: 10px;
-    background-color: transparent;
-    border: 2px solid #222831;
-}
-
-.container button:hover{
-    background-color: #222831;
-    transition: 0.4s;
-}
-
-p{
-    font-size: 20px;
-    line-height: 1.5;
-    color: #e3e8ea;
-}
-
-.preco span{
+    background: #ccc;
+    color: #fbfbfb;
+    padding: 20px;
+    border-radius: 8px;
     font-weight: bold;
-    color: #a4b1bc;
+    font-size: 1em;
+    transition: .2s;
 }
 
-#monitorSamsungFreesync{
-    width: 310px;
-    margin-top: 28px;
-    margin-bottom: 30px;
+.container button:hover {
+    background: #01b392;
+    box-shadow: 5px 5px 10px #01b392;
 }
 
-#monitorLG{
-    margin: 0px;
+p {
+    color: #ffffff;
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+.preco, .preco span{
+    color: #db4444;;
+    font-weight: 900;
+}
+
+.preco span {
+    margin-right: 6px;
+}
+
+.containerProdutos img {
+    margin-top: 10px;
+    margin-bottom: 25px;
     width: 300px;
+    border-radius: 17%;
+    box-shadow: 5px 5px 10px #0a0a0a;   
 }
 
-#monitorOdysseyG30{
-    width: 350px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    transform: translateX(-26px);
-}
-
-#headsetLogitechG733{
-    width: 200px;
-}
-
-.stars{
-    margin-bottom: 8px;
+.stars {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    color: #888888;
+    margin-bottom: 15px;
 }
