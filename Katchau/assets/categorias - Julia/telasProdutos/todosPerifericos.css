@@ -17,6 +17,10 @@ body {
 }
 
 main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 30px;
     background-color: #222831;
     color: #FFFF;
@@ -32,12 +36,18 @@ h2 {
 
 hr {
     border: 1px solid #888888;
+    width: 100%;
+    margin-bottom: 30px;
 }
 
 .header {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    margin: 0px 15px 0px 15px;
+    align-items: center;
+    margin-top: 7px;
+    width: 100%;
+    height: 50px;
 }
 
 .header a {
@@ -46,6 +56,7 @@ hr {
     align-items: center;
     text-decoration: underline;
     font-size: 17px;
+    margin-right: 15px;
 }
 
 .header a:hover {
@@ -53,10 +64,15 @@ hr {
     transition: 0.3s ease-in;
 }
 
+.header h2{
+    margin-left: 15px;
+}
+
 .containerProdutos {
     display: flex;
-    justify-content: space-around;
-    padding: 30px;
+    justify-content: space-between;
+    padding: 10px;
+    width: 90%;
 }
 
 img {
@@ -66,7 +82,6 @@ img {
 }
 
 .container {
-    cursor: default;
     padding: 0px 25px;
     width: 350px;
     height: 585px;
@@ -133,4 +148,49 @@ p {
     font-size: 13px;
     color: #888888;
     margin-bottom: 15px;
+}
+
+.mostrarmais{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mostrarmais button{
+    text-decoration: underline;
+    color: #FFFF;
+    font-size: 16px;
+    border-radius: 8px;
+    height: 30px;
+    transition: 0.2s ease-in-out;
+}
+
+.mostrarmais button:focus{
+    color: #888888;
+}
+
+#oculto{
+    display: none;
+}
+
+.popUpCart{
+    display: none;
+    height: 45px;
+    background-color: #393E46;
+    border-radius: 70px;
+    position: fixed;
+    bottom: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    opacity: 0;
+}
+
+
+#textAdded{
+    display: none;
+}
+
+.popUpCart img{
+    width: 45px;
 }
