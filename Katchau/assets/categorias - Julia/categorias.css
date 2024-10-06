@@ -23,11 +23,37 @@ main {
 }
 
 h1 {
-    font-size: 33px;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+h1::after{
+    content: '';
+    width: 70px;
+    height: 0.3rem;
+    border-radius: 20px;
+    background-color: #FD7014;
+    display: block;
 }
 
 h2 {
     font-size: 28px;
+}
+
+.header:nth-of-type(1){
+    margin-top: 50px;
+}
+
+h2::after{
+    content: '';
+    display: inline-block;
+    vertical-align: middle; 
+    width: 5px;
+    height: 1.8rem;
+    margin-right: 5px;
+    border-radius: 20px 0px 0px 20px;
+    background-color: #FD7014;
+    float: left;   
 }
 
 hr{
@@ -37,7 +63,7 @@ hr{
 .header {
     display: flex;
     justify-content: space-between;
-    margin: 0px 15px 0px 15px;
+    margin: 45px 15px 0px 15px;
 }
 
 .header a {
@@ -45,11 +71,12 @@ hr{
     align-items: center;
     text-decoration: underline;
     font-size: 17px;
+    transition: 0.2s ease-in;
 }
 
 .header a:hover {
     color: var(--laranja);
-    transition: 0.3s ease-in;
+    transition: 0.2s ease-in;
 }
 
 .containerCategorias {

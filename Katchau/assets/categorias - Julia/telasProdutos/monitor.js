@@ -1,18 +1,3 @@
-const mostrarMaisBtn = document.getElementById('mostrarMais');
-const oculto = document.getElementById('oculto');
-
-mostrarMaisBtn.addEventListener('click', () => {
-
-    if (oculto.style.display == 'flex') {
-        oculto.style.display = 'none'; 
-        mostrarMaisBtn.innerText = 'Mostrar mais'; 
-    } else {
-        oculto.style.display = 'flex'; 
-        mostrarMaisBtn.innerText = 'Mostrar menos'; 
-    }
-
-});
-
 const addedTo = document.querySelectorAll('.addedTo');
 const popUpCart = document.getElementById('popUpCart');
 const textAdded = document.getElementById('textAdded');
@@ -49,5 +34,3 @@ addedTo.forEach(button => {
 
     });
 });
-
-
