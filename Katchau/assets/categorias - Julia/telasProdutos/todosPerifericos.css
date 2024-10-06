@@ -49,10 +49,10 @@ hr {
     height: 50px;
 }
 
-h2::after{
+.header h2::after {
     content: '';
     display: inline-block;
-    vertical-align: middle; 
+    vertical-align: middle;
     width: 5px;
     height: 1.8rem;
     margin-right: 5px;
@@ -76,7 +76,7 @@ h2::after{
     transition: 0.3s ease-in;
 }
 
-.header h2{
+.header h2 {
     margin-left: 15px;
 }
 
@@ -100,7 +100,7 @@ img {
     padding: 22px;
 }
 
-.container a{
+.container a {
     width: 300px;
     height: 500px;
 }
@@ -142,15 +142,15 @@ p {
     font-size: 20px;
 }
 
-.precos{
+.precos {
     margin-top: 20px;
 }
 
-.precos p{
+.precos p {
     line-height: 0.3;
 }
 
-.precoAntigo{
+.precoAntigo {
     font-size: 16px;
     font-weight: 900;
     color: #b6b6b6;
@@ -161,18 +161,19 @@ p {
     }
 }
 
-.precoOriginal{
+.precoOriginal {
     font-weight: 900;
     font-size: 20px;
     color: #bdbdbd;
     margin-bottom: 20px;
 }
 
-.precoNovo{
-    color: #db4444;;
+.precoNovo {
+    color: #db4444;
+    ;
     font-weight: 900;
-    
-    & span{
+
+    & span {
         margin-right: 5px;
     }
 }
@@ -180,7 +181,7 @@ p {
 .containerProdutos img {
     width: 300px;
     border-radius: 17%;
-    box-shadow: 5px 5px 10px #0a0a0a;   
+    box-shadow: 5px 5px 10px #0a0a0a;
 }
 
 .stars {
@@ -190,14 +191,14 @@ p {
     color: #888888;
 }
 
-.mostrarmais{
+.mostrarmais {
     padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.mostrarmais button{
+.mostrarmais button {
     text-decoration: underline;
     color: #FFFF;
     font-size: 18px;
@@ -206,15 +207,15 @@ p {
     transition: 0.2s ease-in-out;
 }
 
-.mostrarmais button:focus{
+.mostrarmais button:focus {
     color: #888888;
 }
 
-#oculto{
+#oculto {
     display: none;
 }
 
-.popUpCart{
+.popUpCart {
     display: none;
     height: 45px;
     background-color: #393E46;
@@ -227,10 +228,29 @@ p {
 }
 
 
-#textAdded{
+#textAdded {
     display: none;
 }
 
-.popUpCart img{
+.popUpCart img {
     width: 45px;
+}
+
+.produtosComDesconto{
+    display: flex;
+}
+
+.porcentoDesconto {
+    display: flex;
+    justify-content: right;
+}
+
+.desconto {
+    padding: 3px;
+    position: absolute;
+    color: #fbfbfb;
+    background: #db4444;
+    max-height: 26px;
+    border-radius: 6px;
+    margin: 20px 16px 0 20px;
 }

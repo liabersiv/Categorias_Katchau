@@ -44,7 +44,7 @@ h2 {
     margin-top: 50px;
 }
 
-h2::after{
+.header h2::after{
     content: '';
     display: inline-block;
     vertical-align: middle; 
