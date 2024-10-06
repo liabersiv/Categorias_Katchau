@@ -58,7 +58,8 @@ h2::after{
     margin-right: 5px;
     border-radius: 20px 0px 0px 20px;
     background-color: #FD7014;
-    float: left;   
+    position: absolute;
+    left: 35px;
 }
 
 .header a {
