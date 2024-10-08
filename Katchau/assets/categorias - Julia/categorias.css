@@ -82,9 +82,9 @@ hr{
 
 .containerCategorias {
     display: flex;
-    padding: 25px;
+    padding: 25px 0;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 p{
@@ -108,12 +108,11 @@ p{
 
     justify-content: space-around;
     align-items: center;
-    width: 400px;
+    width: 385px;
     height: 165px;
     border-radius: 30px;
     background: var(--bgContainer);
     border: 1px solid #454545;
-    margin: 0px 20px 0px 5px;   
 }
 
 .container:hover {
@@ -184,7 +183,6 @@ p{
     max-width: 210px;
     transform: rotate(-10deg);
     transform: translateX(15px);
-    align-items: center;
 }
 
 #fontedealimentacao{
