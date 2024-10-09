@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: #222831;
+}
+
+main{
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: #393E46;
+    width: 800px;
+    height: 520px;
+    border-radius: 30px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.header h1::after{
+    content: '';
+    display: block;
+    width: 160px;
+    height: 6px;
+    border-radius: 20px;
+    background-color: #FD7014;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+form{
+    display: flex;
+    justify-content: space-around;
+}
+
+.inputContainers{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.input{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.input input{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: #CCCCCC;
+    text-indent: 25px;
+    font-size: 16px;
+    outline: none;
+    color: #323232;
+}
+
+i {
+    padding: 0;
+    margin: 0;
+    color: #555555; 
+}
+
+.termosdeuso {
+    color: #ffff;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+.termosdeuso input[type="checkbox"]+label {
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.termosdeuso a{
+    color: #FD7014;
+    text-decoration: underline;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttons button{
+    background-color: #FD7014;
+    width: 200px;
+    height: 35px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+#continuar{
+    font-size: 15px;
+    color: #e2e2e2;
+    border: 1px solid #8A3B07;
+}
+
+#temConta{
+    color: #e2e2e2;
+    font-size: 15px;
+    background-color: transparent;
+    border: 1px solid #232629;
+}
+
