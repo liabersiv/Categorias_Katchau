@@ -80,13 +80,6 @@ hr{
     transition: 0.2s ease-in;
 }
 
-.containerCategorias {
-    display: flex;
-    padding: 25px 0;
-    align-items: center;
-    justify-content: space-between;
-}
-
 p{
     font-size: 20px;
     color: #d1cfcf;
@@ -100,12 +93,19 @@ p{
     justify-content: center;
 }
 
+.containerCategorias {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    
+}
+
 .container {
 
     cursor: pointer;
 
     display: flex;
-
     justify-content: space-around;
     align-items: center;
     width: 385px;
@@ -113,6 +113,7 @@ p{
     border-radius: 30px;
     background: var(--bgContainer);
     border: 1px solid #454545;
+    margin: 0px 20px 0px 5px; 
 }
 
 .container:hover {
