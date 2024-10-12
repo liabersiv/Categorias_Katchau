@@ -10,6 +10,7 @@ senha.addEventListener('input', () => {
     } else { 
         cadeado.style.display = 'flex';
         eyesOn.style.display = 'none';
+        eyesOff.style.display = 'none';
     }
 })
 
