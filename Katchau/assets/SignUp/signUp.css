@@ -149,3 +149,16 @@ form{
 #eyesOff{
     display: none;
 }
+
+/* desativar o olho padrao (que aparece no input type password) de todos os navegadores */
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+    display: none;
+}
+
+input[type="password"]::-webkit-clear-button,
+input[type="password"]::-webkit-inner-spin-button,
+input[type="password"]::-webkit-outer-spin-button,
+input[type="password"]::-webkit-reveal {
+    display: none;
+}
