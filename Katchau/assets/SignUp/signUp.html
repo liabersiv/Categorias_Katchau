@@ -97,7 +97,8 @@
                     <label for="email">
                         <div class="input">
                             <input type="email" id="email" name="email" placeholder="E-mail">
-                            <i class="material-symbols-outlined icon-input">alternate_email</i>
+                            <i class="material-symbols-outlined icon-input" id="close">close</i>
+                            <i class="material-symbols-outlined icon-input" id="emailIcon">alternate_email</i>
                         </div>
                     </label>
                 </div>
@@ -140,16 +141,21 @@
             </form>
 
             <div class="termosdeuso">
-                <label for="termosdeuso">
-                    <input type="checkbox" id="termosdeuso" name="termosdeuso">
+                <label for="termosDeUso">
+                    <input type="checkbox" id="termosDeUso" name="termosdeuso" required>
                     Li e aceito <a href="../termos-de-uso/termos-de-uso.html">Termos de uso</a> e <a
                         href="../politica-de-privacidade/politica-de-privacidade.html">Política</a>
                 </label>
             </div>
 
             <div class="buttons">
-                <button id="continuar"> <a href="../SignUp/cadastro-sucesso.html">Continuar</a></button>
+                <button id="continuar" disabled>Continuar</button>
                 <button id="temConta"> <a href="../SignUp/entrar-kayan.html">Já tem conta? Entre</a></button>
+            </div>
+
+            <div class="popUp_TermosDeUso">
+                <img src="img-denied/deniedicon.png" id="deniedicon" alt="">
+                <p id="textAdded">Aceite os Termos de Uso e Política.</p>
             </div>
 
         </div>

@@ -157,6 +157,35 @@ input::placeholder{
     display: none;
 }
 
+#close{
+    display: none;
+    margin-top: 8px;
+}
+
+#close:focus{
+    color: #FD7014;
+}
+
+.popUp_TermosDeUso {
+    display: none;
+    height: 45px;
+    background-color: #393E46;
+    border-radius: 70px;
+    position: fixed;
+    overflow: hidden;
+    white-space: nowrap;
+    opacity: 0;
+}
+
+
+#textAdded {
+    display: none;
+}
+
+#deniedicon {
+    width: 45px;
+}
+
 /* desativar o olho padrao (que aparece no input type password) de todos os navegadores */
 input[type="password"]::-ms-reveal,
 input[type="password"]::-ms-clear {
