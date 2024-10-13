@@ -38,8 +38,24 @@ $(document).ready(function () {
 
 const adress = document.getElementById('adress');
 $(document).ready(function () {
-    function rua(value){
-        return 'Rua ' + value;
-    }
-})
+
+    function rua(nomeDaRua) {
+        return 'Rua ' + nomeDaRua;
+    };
+
+    $('#adress').on('input', function () {
+        const nomeDaRua = $(this).val().replace(/Rua /, '');
+        $(this).val(rua(nomeDaRua));
+
+        if (nomeDaRua.length === 0) {
+            $(this).val('');
+        }
+
+    });
+
+
+
+});
+
+
 
