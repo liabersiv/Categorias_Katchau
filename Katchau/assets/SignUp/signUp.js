@@ -52,10 +52,11 @@ $(document).ready(function () {
         }
 
     });
-
-
-
 });
 
+const phone = document.getElementById('phone');
+$(document).ready(function () {
+    $('#phone').mask('(00) 00000-0000');
+});
 
-
+const email = document.getElementById('email');
