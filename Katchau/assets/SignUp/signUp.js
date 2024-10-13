@@ -49,7 +49,7 @@ $(document).ready(function () {
 
         if (nomeDaRua.length === 0) {
             $(this).val('');
-        }
+        };
 
     });
 });
@@ -60,3 +60,25 @@ $(document).ready(function () {
 });
 
 const email = document.getElementById('email');
+$(document).ready(function () {
+
+    function gmail(usuario) {
+        return usuario + '@gmail.com';
+    }
+
+    $('#email').on('input', function () {
+
+        const usuario = $(this).val().replace(/@g /, '').trim();
+
+        if (usuario.includes('@g')) {
+            $(this).val(usuario.replace(/@g.*$/, '@gmail.com'));
+        } else if (usuario.includes('@y')) {
+            $(this).val(usuario + 'ahoo.com');
+        } 
+        
+        if(usuario.length < 3){
+            $(this).val();
+        }
+
+    });
+});
