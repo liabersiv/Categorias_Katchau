@@ -159,31 +159,31 @@ input::placeholder{
 
 #close{
     display: none;
+    color: #ff3325;
     margin-top: 8px;
-}
-
-#close:focus{
-    color: #FD7014;
 }
 
 .popUp_TermosDeUso {
     display: none;
-    height: 45px;
-    background-color: #393E46;
-    border-radius: 70px;
+    background-color: #222831;
+    height: 40px;
+    bottom: 5%;
     position: fixed;
+    border-radius: 70px;
     overflow: hidden;
     white-space: nowrap;
-    opacity: 0;
+    opacity: 1;
 }
 
-
 #textAdded {
+    font-size: 18px;
+    margin-left: 10px;
+    color: #ffff;
     display: none;
 }
 
 #deniedicon {
-    width: 45px;
+    width: 40px;
 }
 
 /* desativar o olho padrao (que aparece no input type password) de todos os navegadores */

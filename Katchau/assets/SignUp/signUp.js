@@ -50,7 +50,6 @@ $(document).ready(function () {
         if (nomeDaRua.length === 0) {
             $(this).val('');
         };
-
     });
 });
 
@@ -65,7 +64,7 @@ const emailIcon = document.getElementById('emailIcon');
 
 email.addEventListener('input', () => {
 
-    if (email.value.includes('@')) {
+    if (email.value.includes('')) {
         emailIcon.style.display = 'none';
         close.style.display = 'flex';
     } else {
@@ -75,8 +74,8 @@ email.addEventListener('input', () => {
 });
 
 close.addEventListener('click', () => {
+
     email.value = '';
-    close.style.color = '#ff3325';
 
     if (email.value === '') {
         emailIcon.style.display = 'flex';
@@ -86,10 +85,6 @@ close.addEventListener('click', () => {
 });
 
 $(document).ready(function () {
-
-    function gmail(usuario) {
-        return usuario + '@gmail.com';
-    };
 
     $('#email').on('input', function () {
 
@@ -104,53 +99,54 @@ $(document).ready(function () {
     });
 });
 
-const continuar = document.getElementById('continuar');
-continuar.addEventListener('click', () => {
-    window.location.href = 'cadastro-sucesso.html';
-});
 
-const termos = document.getElementById('termosDeUso');
+const popUp = document.getElementById('popUpTermos');
+const textAdded = document.getElementById('textAdded');
 
 const popUpEvent = () => {
 
-    const popUp = document.querySelector('.popUp_TermosDeUso');
-    const textAdded = document.getElementById('textAdded');
-
     const popReduced = () => {
-        popUp.style.width = '45px';
+        popUp.style.width = '40px';
         popUp.style.display = 'flex';
+        popUp.style.opacity = '1';
     };
-        continuar.addEventListener('click', () => {
-            popUp.style.opacity = '1';
 
-            popReduced();
+    popReduced();
 
-            setTimeout(() => {
-                popUp.style.width = '370px';
-                popUp.style.transition = '0.5s';
-                popUp.style.boxShadow = '5px 5px 8px #0a0a0a';
-                textAdded.style.display = 'flex';
-                textAdded.style.fontSize = '18px';
-                textAdded.style.alignItems = 'center';
-            }, 300);
 
-            setTimeout(() => {
-                popReduced();
-            }, 2200);
+    setTimeout(() => {
+        popUp.style.width = '355px';
+        popUp.style.transition = '0.5s';
+        popUp.style.boxShadow = '5px 5px 8px #0a0a0a';
+        textAdded.style.display = 'flex';
+        textAdded.style.fontSize = '18px';
+        textAdded.style.alignItems = 'center';
+    }, 300);
 
-            setTimeout(() => {
-                popUp.style.opacity = '0';
-                popUp.style.transition = '0.5s';
-            }, 3000);
+    setTimeout(() => {
+        popReduced();
+    }, 2500);
 
-        });
+    setTimeout(() => {
+        popUp.style.opacity = '0';
+        popUp.style.transition = '0.5s';
+    }, 3200);
+
 };
 
+const continuar = document.getElementById('continuar');
+const termos = document.getElementById('termosDeUso');
+
+if (termos.checked) {
+    continuar.disabled = true;
+} else {
+    continuar.disabled = false;
+}
 
 continuar.addEventListener('click', () => {
-    if(termos.checked){
-        continuar.disabled = false;
-    } else{
+    if (termos.checked == true) {
+        window.location.href = 'cadastro-sucesso.html';
+    } else {
         popUpEvent();
     }
 });
