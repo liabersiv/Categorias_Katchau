@@ -64,7 +64,7 @@ const emailIcon = document.getElementById('emailIcon');
 
 email.addEventListener('input', () => {
 
-    if (email.value.includes('')) {
+    if (email.value.length != 0) {
         emailIcon.style.display = 'none';
         close.style.display = 'flex';
     } else {
@@ -77,7 +77,7 @@ close.addEventListener('click', () => {
 
     email.value = '';
 
-    if (email.value === '') {
+    if (email.value.length == 0) {
         emailIcon.style.display = 'flex';
         close.style.display = 'none';
     };
