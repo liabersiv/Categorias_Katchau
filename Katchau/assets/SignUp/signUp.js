@@ -27,15 +27,30 @@ eyesOff.addEventListener('click', () => {
 });
 
 const cpf = document.getElementById('cpf');
-$(document).ready(function () {
-    $('#cpf').mask('000.000.000-00');
+cpf.addEventListener('keypress', () => {
+    let cpfLength = cpf.value.length;
+    
+    if(cpfLength === 3 || cpfLength === 7){
+        cpf.value += ".";
+    } else if (cpfLength === 11){
+        cpf.value += "-";
+    };
 });
+/* $(document).ready(function () {
+    $('#cpf').mask('000.000.000-00');
+}); */
 
 const cep = document.getElementById('cep');
-$(document).ready(function () {
-    $('#cep').mask('00000-000');
-});
+cep.addEventListener('keypress', () => {
+    let cepLegth = cep.value.length;
 
+    if(cepLegth === 5){
+        cep.value += "-";
+    };
+});
+/* $(document).ready(function () {
+    $('#cep').mask('00000-000');
+}); */
 const adress = document.getElementById('adress');
 $(document).ready(function () {
 
