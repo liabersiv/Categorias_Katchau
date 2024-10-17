@@ -42,17 +42,26 @@ cpf.addEventListener('keypress', () => {
 
 const cep = document.getElementById('cep');
 cep.addEventListener('keypress', () => {
-    let cepLegth = cep.value.length;
+    let cepLength = cep.value.length;
 
-    if(cepLegth === 5){
+    if(cepLength === 5){
         cep.value += "-";
     };
 });
 /* $(document).ready(function () {
     $('#cep').mask('00000-000');
 }); */
+
 const adress = document.getElementById('adress');
-$(document).ready(function () {
+adress.addEventListener('keypress', () => {
+    const adressLength = adress.value.length;
+
+    if(adressLength === 0){
+        adress.value = "Rua ";
+    };
+});
+
+/* $(document).ready(function () {
 
     function rua(nomeDaRua) {
         return 'Rua ' + nomeDaRua;
@@ -66,7 +75,7 @@ $(document).ready(function () {
             $(this).val('');
         };
     });
-});
+}); */
 
 const phone = document.getElementById('phone');
 $(document).ready(function () {
