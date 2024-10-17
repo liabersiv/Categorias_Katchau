@@ -29,10 +29,10 @@ eyesOff.addEventListener('click', () => {
 const cpf = document.getElementById('cpf');
 cpf.addEventListener('keypress', () => {
     let cpfLength = cpf.value.length;
-    
-    if(cpfLength === 3 || cpfLength === 7){
+
+    if (cpfLength === 3 || cpfLength === 7) {
         cpf.value += ".";
-    } else if (cpfLength === 11){
+    } else if (cpfLength === 11) {
         cpf.value += "-";
     };
 });
@@ -40,11 +40,11 @@ cpf.addEventListener('keypress', () => {
     $('#cpf').mask('000.000.000-00');
 }); */
 
-const cep = document.getElementById('cep');
+const cepInput = document.getElementById('cep');
 cep.addEventListener('keypress', () => {
     let cepLength = cep.value.length;
 
-    if(cepLength === 5){
+    if (cepLength === 5) {
         cep.value += "-";
     };
 });
@@ -52,11 +52,48 @@ cep.addEventListener('keypress', () => {
     $('#cep').mask('00000-000');
 }); */
 
+const popUp_Cep_NaoEncontrado = document.getElementById('popUp_Cep_NaoEncontrado');
+const cepInvalidoText = document.getElementById('cepInvalidoText');
+
+function buscaCEP(valor) {
+
+    let cep = valor.replace(/\D/g, '');
+
+    if (cep != '') {
+        let validaCep = /^[0-9]{8}$/; //determina que a string deve conter exatamente 8 digitos e entre 0 a 9
+
+        if (validaCep.text(cep)) {
+            let api = document.createElement('script'); //para pegar um serviço externo que seria a API
+            api.src = 'https://viacep.com.br/ws/' + cep + '/json/?callback=meu_callback';
+            document.body.appendChild(api); //ele é inserido como um filho de um elemento ja existente | ele pode inserir elementos html dentro de outros elementos
+        } else {
+            limpaCepForm();
+            cep.addEventListener('blur', () => {
+                popUpEvent(popUp_Cep_NaoEncontrado, cepInvalidoText);
+            });
+        };
+    };
+};
+
+function callBack(conteudo) {
+    if (!("erro" in conteudo)) {
+        document.getElementById('rua').value = (conteudo.logradouro);
+    } else {
+        limpaCepForm();
+        popUpEvent(popUp_Cep_NaoEncontrado, cepInvalidoText);
+    }
+};
+
+function limpaCepForm() {
+    cep.value = '';
+    adress.value = '';
+};
+
 const adress = document.getElementById('adress');
 adress.addEventListener('keypress', () => {
     const adressLength = adress.value.length;
 
-    if(adressLength === 0){
+    if (adressLength === 0) {
         adress.value = "Rua ";
     };
 });
@@ -124,10 +161,10 @@ $(document).ready(function () {
 });
 
 
-const popUp = document.getElementById('popUpTermos');
-const textAdded = document.getElementById('textAdded');
+const popUp = document.querySelector('.popUp');
+const textAdded = document.querySelector('.textAdded');
 
-const popUpEvent = () => {
+function popUpEvent(popUpID, text) {
 
     const popReduced = () => {
         popUp.style.width = '40px';
@@ -167,10 +204,13 @@ if (termos.checked) {
     continuar.disabled = false;
 }
 
+const popUp_TermosDeUso = document.getElementById('popUpTermos');
+const aceiteTermosText = document.getElementById('aceiteTermosText');
+
 continuar.addEventListener('click', () => {
     if (termos.checked == true) {
         window.location.href = 'cadastro-sucesso.html';
     } else {
-        popUpEvent();
+        popUpEvent(popUpTermos, aceiteTermosText);
     }
 });

@@ -163,7 +163,7 @@ input::placeholder{
     margin-top: 8px;
 }
 
-.popUp_TermosDeUso {
+.popUp {
     display: none;
     background-color: #222831;
     height: 40px;
@@ -175,7 +175,7 @@ input::placeholder{
     opacity: 1;
 }
 
-#textAdded {
+.textAdded {
     font-size: 18px;
     margin-left: 10px;
     color: #ffff;

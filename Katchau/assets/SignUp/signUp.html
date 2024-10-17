@@ -79,7 +79,7 @@
 
                     <label for="cep">
                         <div class="input">
-                            <input type="text" id="cep" name="cep" placeholder="CEP" maxlength="9">
+                            <input type="text" id="cep" name="cep" placeholder="CEP" maxlength="9" onblur="buscaCEP(this.value)">
                             <i class="material-symbols-outlined icon-input">map</i>
                         </div>
                     </label>
@@ -156,9 +156,14 @@
             
         </div>
         
-        <div class="popUp_TermosDeUso" id="popUpTermos">
+        <div class="popUp" id="popUpTermos">
             <img src="img-denied/deniedicon.png" id="deniedicon" alt="">
-            <p id="textAdded">Aceite os Termos de Uso e Política.</p>
+            <p class="textAdded" id="aceiteTermosText">Aceite os Termos de Uso e Política.</p>
+        </div>
+
+        <div class="popUp" id="popUp_Cep_NaoEncontrado">
+            <img src="img-denied/deniedicon.png" id="deniedicon" alt="">
+            <p class="textAdded" id="cepInvalidoText">Digite um CEP válido.</p>
         </div>
     </main>
 
