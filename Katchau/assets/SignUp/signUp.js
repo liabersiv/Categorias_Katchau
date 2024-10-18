@@ -41,8 +41,8 @@ cpf.addEventListener('keypress', () => {
 }); */
 
 
-const popUp_Cep_NaoEncontrado = document.getElementById('popUp_Cep_NaoEncontrado');
-const cepInvalidoText = document.getElementById('cepInvalidoText');
+let popUp_Cep_NaoEncontrado = document.getElementById('popUp_Cep_NaoEncontrado');
+let cepInvalidoText = document.getElementById('cepInvalidoText');
 
 function buscaCEP(valor) {
 
@@ -60,7 +60,7 @@ function buscaCEP(valor) {
         } else {
             limpaCepForm();
             cep.addEventListener('blur', () => {
-                popUpEvent(popUp_Cep_NaoEncontrado, cepInvalidoText);
+                popUpEvent(cepInvalidoText);
             });
         };
     };
@@ -71,7 +71,7 @@ function meu_callback(conteudo) {
         document.getElementById('adress').value = (conteudo.logradouro);
     } else {
         limpaCepForm();
-        popUpEvent(popUp_Cep_NaoEncontrado, cepInvalidoText);
+        popUpEvent();
     };
 };
 
@@ -119,9 +119,22 @@ function rua(nomeDaRua) {
 }); */
 
 const phone = document.getElementById('phone');
-$(document).ready(function () {
-    $('#phone').mask('(00) 00000-0000');
+phone.addEventListener('keypress', () => {
+    let phoneLength = phone.value.length;
+
+    if (phoneLength === 0 ){
+        phone.value += '(';
+    }else if (phoneLength === 3){
+        phone.value += ') ';
+    };
+
+    if (phoneLength === 10){
+        phone.value += '-';
+    }
 });
+/* $(document).ready(function () {
+    $('#phone').mask('(00) 00000-0000');
+}); */
 
 const email = document.getElementById('email');
 const close = document.getElementById('close');
@@ -149,7 +162,15 @@ close.addEventListener('click', () => {
 
 });
 
-$(document).ready(function () {
+email.addEventListener('input', () => {
+    stringDigitada = email.value.length;
+
+    if(email.value.endsWith('@g')){
+        email.value += 'mail.com';
+    }
+})
+
+/* $(document).ready(function () {
 
     $('#email').on('input', function () {
 
@@ -162,13 +183,13 @@ $(document).ready(function () {
         };
 
     });
-});
+}); */
 
 
 const popUp = document.querySelector('.popUp');
 const textAdded = document.querySelector('.textAdded');
 
-function popUpEvent(textAddedID) {
+function popUpEvent(cepInvalidoText) {
 
     const popReduced = () => {
         popUp.style.width = '40px';
