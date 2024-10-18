@@ -47,7 +47,12 @@ adress.addEventListener('keypress', () => {
     };
 });
 
-cep.addEventListener('keypress', () => {
+cep.addEventListener('keypress', (event) => {
+
+    if (!/[0-9]/.test(event.key)) {
+        event.preventDefault();
+    };
+
     let cepLength = cep.value.length;
 
     if (cepLength === 5) {
@@ -78,7 +83,12 @@ function rua(nomeDaRua) {
 
 
 const cpf = document.getElementById('cpf');
-cpf.addEventListener('keypress', () => {
+cpf.addEventListener('keypress', (event) => {
+
+    if (!/[0-9]/.test(event.key)) {
+        event.preventDefault();
+    };
+
     let cpfLength = cpf.value.length;
 
     if (cpfLength === 3 || cpfLength === 7) {
@@ -143,7 +153,12 @@ email.addEventListener('input', () => {
 
 
 const phone = document.getElementById('phone');
-phone.addEventListener('keypress', () => {
+phone.addEventListener('keypress', (event) => {
+
+    if (!/[0-9]/.test(event.key)) {
+        event.preventDefault();
+    };
+
     let phoneLength = phone.value.length;
 
     if (phoneLength === 0 ){
@@ -241,5 +256,5 @@ continuar.addEventListener('click', () => {
         window.location.href = 'cadastro-sucesso.html';
     } else {
         popUpEvent(aceiteTermosText);
-    }
+    };
 });
