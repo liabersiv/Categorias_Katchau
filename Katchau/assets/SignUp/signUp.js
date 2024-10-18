@@ -1,45 +1,3 @@
-const cadeado = document.getElementById('cadeado');
-const senha = document.getElementById('password');
-const eyesOn = document.getElementById('eyesOn');
-const eyesOff = document.getElementById('eyesOff');
-
-senha.addEventListener('input', () => {
-    if (senha.value.length > 0) {
-        cadeado.style.display = 'none';
-        eyesOn.style.display = 'flex';
-    } else {
-        cadeado.style.display = 'flex';
-        eyesOn.style.display = 'none';
-        eyesOff.style.display = 'none';
-    }
-});
-
-eyesOn.addEventListener('click', () => {
-    senha.type = 'text';
-    eyesOff.style.display = 'flex';
-    eyesOn.style.display = 'none';
-});
-
-eyesOff.addEventListener('click', () => {
-    senha.type = 'password';
-    eyesOn.style.display = 'flex';
-    eyesOff.style.display = 'none';
-});
-
-const cpf = document.getElementById('cpf');
-cpf.addEventListener('keypress', () => {
-    let cpfLength = cpf.value.length;
-
-    if (cpfLength === 3 || cpfLength === 7) {
-        cpf.value += ".";
-    } else if (cpfLength === 11) {
-        cpf.value += "-";
-    };
-});
-/* $(document).ready(function () {
-    $('#cpf').mask('000.000.000-00');
-}); */
-
 
 let popUp_Cep_NaoEncontrado = document.getElementById('popUp_Cep_NaoEncontrado');
 let cepInvalidoText = document.getElementById('cepInvalidoText');
@@ -118,23 +76,21 @@ function rua(nomeDaRua) {
     });
 }); */
 
-const phone = document.getElementById('phone');
-phone.addEventListener('keypress', () => {
-    let phoneLength = phone.value.length;
 
-    if (phoneLength === 0 ){
-        phone.value += '(';
-    }else if (phoneLength === 3){
-        phone.value += ') ';
+const cpf = document.getElementById('cpf');
+cpf.addEventListener('keypress', () => {
+    let cpfLength = cpf.value.length;
+
+    if (cpfLength === 3 || cpfLength === 7) {
+        cpf.value += ".";
+    } else if (cpfLength === 11) {
+        cpf.value += "-";
     };
-
-    if (phoneLength === 10){
-        phone.value += '-';
-    }
 });
 /* $(document).ready(function () {
-    $('#phone').mask('(00) 00000-0000');
+    $('#cpf').mask('000.000.000-00');
 }); */
+
 
 const email = document.getElementById('email');
 const close = document.getElementById('close');
@@ -184,6 +140,54 @@ email.addEventListener('input', () => {
 
     });
 }); */
+
+
+const phone = document.getElementById('phone');
+phone.addEventListener('keypress', () => {
+    let phoneLength = phone.value.length;
+
+    if (phoneLength === 0 ){
+        phone.value += '(';
+    }else if (phoneLength === 3){
+        phone.value += ') ';
+    };
+
+    if (phoneLength === 10){
+        phone.value += '-';
+    }
+});
+/* $(document).ready(function () {
+    $('#phone').mask('(00) 00000-0000');
+}); */
+
+
+const cadeado = document.getElementById('cadeado');
+const senha = document.getElementById('password');
+const eyesOn = document.getElementById('eyesOn');
+const eyesOff = document.getElementById('eyesOff');
+
+senha.addEventListener('input', () => {
+    if (senha.value.length > 0) {
+        cadeado.style.display = 'none';
+        eyesOn.style.display = 'flex';
+    } else {
+        cadeado.style.display = 'flex';
+        eyesOn.style.display = 'none';
+        eyesOff.style.display = 'none';
+    }
+});
+
+eyesOn.addEventListener('click', () => {
+    senha.type = 'text';
+    eyesOff.style.display = 'flex';
+    eyesOn.style.display = 'none';
+});
+
+eyesOff.addEventListener('click', () => {
+    senha.type = 'password';
+    eyesOn.style.display = 'flex';
+    eyesOff.style.display = 'none';
+});
 
 
 const popUp = document.querySelector('.popUp');
