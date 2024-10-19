@@ -18,7 +18,7 @@ function buscaCEP(valor) {
         } else {
             limpaCepForm();
             cep.addEventListener('blur', () => {
-                popUpEvent(cepInvalidoText);
+                popUpEvent('Digite um CEP válido', '23px');
             });
         };
     };
@@ -29,7 +29,7 @@ function meu_callback(conteudo) {
         document.getElementById('adress').value = (conteudo.logradouro);
     } else {
         limpaCepForm();
-        popUpEvent();
+        popUpEvent('   CEP inválido. Tente novamente.', '23px');
     };
 };
 
@@ -208,7 +208,13 @@ eyesOff.addEventListener('click', () => {
 const popUp = document.querySelector('.popUp');
 const textAdded = document.querySelector('.textAdded');
 
-function popUpEvent(cepInvalidoText) {
+function popUpEvent(mensagem, margem) {
+
+    textAdded.textContent = mensagem;
+
+    if(margem){
+        textAdded.style.marginLeft = margem;
+    };
 
     const popReduced = () => {
         popUp.style.width = '40px';
@@ -255,6 +261,6 @@ continuar.addEventListener('click', () => {
     if (termos.checked == true) {
         window.location.href = 'cadastro-sucesso.html';
     } else {
-        popUpEvent(aceiteTermosText);
+        popUpEvent('Aceite os Termos de Uso e Política.');
     };
 });
