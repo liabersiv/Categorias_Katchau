@@ -137,7 +137,7 @@ email.addEventListener('input', () => {
     if(email.value.endsWith('@g')){
         email.value += 'mail.com';
     }
-})
+});
 
 /* $(document).ready(function () {
 
