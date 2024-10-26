@@ -21,12 +21,22 @@ function buscaCEP(valor) {
                 popUpEvent('Digite um CEP válido', '23px');
             });
         };
+
+        if(cep.value === 0){
+            document.getElementById('adress').value = '';
+        document.getElementById('bairro').value = '';
+        document.getElementById('cidade').value = '';
+        document.getElementById('estado').value = '';
+        }
     };
 };
 
 function meu_callback(conteudo) {
     if (!("erro" in conteudo)) {
         document.getElementById('adress').value = (conteudo.logradouro);
+        document.getElementById('bairro').value = (conteudo.bairro);
+        document.getElementById('cidade').value = (conteudo.localidade);
+        document.getElementById('estado').value = (conteudo.uf);
     } else {
         limpaCepForm();
         popUpEvent('   CEP inválido. Tente novamente.', '23px');

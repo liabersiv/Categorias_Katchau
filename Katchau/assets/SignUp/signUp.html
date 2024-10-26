@@ -11,10 +11,10 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="shortcut icon" href="../../img/logo-katchau-removebg-preview.png" type="image/x-icon">
-    
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
-    
+
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="signUp.js" defer></script>
 </head>
@@ -68,19 +68,10 @@
                 <div class="inputContainers">
 
 
-                    <label for="firstname">
+                    <label for="nomeCompleto">
                         <div class="input">
-                            <input type="text" id="firstname" name="firstname" placeholder="Primeiro nome">
+                            <input type="text" id="nomeCompleto" name="nomeCompleto" placeholder="Nome Completo">
                             <i class="material-symbols-outlined icon-input">account_circle</i>
-                        </div>
-                    </label>
-
-
-
-                    <label for="cep">
-                        <div class="input">
-                            <input type="text" id="cep" name="cep" placeholder="CEP" maxlength="9" onblur="buscaCEP(this.value)">
-                            <i class="material-symbols-outlined icon-input">map</i>
                         </div>
                     </label>
 
@@ -93,6 +84,13 @@
                     </label>
 
 
+                    <label for="phone">
+                        <div class="input">
+                            <input type="text" id="phone" name="phone" placeholder="Telefone" maxlength="15">
+                            <i class="material-symbols-outlined icon-input">phone</i>
+                        </div>
+                    </label>
+
 
                     <label for="email">
                         <div class="input">
@@ -101,31 +99,7 @@
                             <i class="material-symbols-outlined icon-input" id="emailIcon">alternate_email</i>
                         </div>
                     </label>
-                </div>
 
-                <div class="inputContainers">
-
-
-                    <label for="lastname">
-                        <div class="input">
-                            <input type="text" id="lastname" name="lastname" placeholder="Sobrenome">
-                            <i class="material-symbols-outlined icon-input">account_circle</i>
-                        </div>
-                    </label>
-
-                    <label for="adress">
-                        <div class="input">
-                            <input type="text" id="adress" name="adress" placeholder="Endereço">
-                            <i class="material-symbols-outlined icon-input">location_on</i>
-                        </div>
-                    </label>
-
-                    <label for="phone">
-                        <div class="input">
-                            <input type="text" id="phone" name="phone" placeholder="Telefone" maxlength="15">
-                            <i class="material-symbols-outlined icon-input">phone</i>
-                        </div>
-                    </label>
 
                     <label for="password">
                         <div class="input">
@@ -138,13 +112,72 @@
 
                 </div>
 
+                <div class="inputContainers">
+
+                    <label for="cep">
+                        <div class="input">
+                            <input type="text" id="cep" name="cep" placeholder="CEP" maxlength="9"
+                                onblur="buscaCEP(this.value)">
+                            <i class="material-symbols-outlined icon-input">map</i>
+                        </div>
+                    </label>
+
+
+                    <label for="adress">
+                        <div class="input">
+                            <input type="text" id="adress" name="adress" placeholder="Endereço">
+                            <i class="material-symbols-outlined icon-input">location_on</i>
+                        </div>
+                    </label>
+
+
+                    <label for="bairro">
+                        <div class="input">
+                            <input type="text" id="bairro" name="bairro" placeholder="Bairro"
+                                onblur="buscaCEP(this.value)">
+                            <i class="material-symbols-outlined icon-input homepin">holiday_village</i>
+                        </div>
+                    </label>
+
+
+                    <div class="endereco-row">
+                        <label for="numero">
+                            <div class="input">
+                                <input type="text" id="numero" name="numero" placeholder="nº">
+                            </div>
+                        </label>
+                        <label for="complemento">
+                            <div class="input">
+                                <input type="text" id="complemento" name="complemento" placeholder="Complemento">
+                                <i class="material-symbols-outlined icon-input homepin">home_pin</i>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="endereco-row">
+                        <label for="cidade">
+                            <div class="input">
+                                <input type="text" id="cidade" name="cidade" placeholder="Cidade"
+                                    onblur="buscaCEP(this.value)">
+                            </div>
+                        </label>
+                        <label for="estado">
+                            <div class="input">
+                                <input type="text" id="estado" name="estado" placeholder="UF">
+                            </div>
+                        </label>
+                    </div>
+
+
+                </div>
+
             </form>
 
             <div class="termosdeuso">
                 <label for="termosDeUso">
                     <input type="checkbox" id="termosDeUso" name="termosdeuso" required>
                     Li e aceito os <a href="../termos-de-uso/termos-de-uso.html">Termos de uso</a> e <a
-                        href="../politica-de-privacidade/politica-de-privacidade.html">Política</a>
+                        href="../politica-de-privacidade/politica-de-privacidade.html">Política</a>.
                 </label>
             </div>
 
@@ -153,9 +186,9 @@
                 <button id="temConta"> <a href="../SignUp/entrar-kayan.html">Já tem conta? Entre</a></button>
             </div>
 
-            
+
         </div>
-        
+
         <div class="popUp" id="popUpTermos">
             <img src="img-denied/deniedicon.png" id="deniedicon" alt="">
             <p class="textAdded" id="aceiteTermosText"></p>

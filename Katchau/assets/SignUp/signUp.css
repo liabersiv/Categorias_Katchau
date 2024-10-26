@@ -22,7 +22,7 @@ main {
     flex-direction: column;
     background-color: #393E46;
     width: 800px;
-    height: 520px;
+    height: 585px;
     border-radius: 30px;
     box-shadow: 2px 2px 25px #f8802f;
     border: 1px solid #232629;
@@ -186,6 +186,39 @@ input::placeholder{
     width: 40px;
 }
 
+#numero{
+    width: 85px;
+    margin-right: 10px;
+}
+
+#numero::placeholder{
+    text-indent: 17px;
+}
+
+.endereco-row{
+    display: flex;
+}
+
+.endereco-row input{
+    width: 205px;
+}
+
+.homepin{
+    right: 67px;
+}
+
+#cidade{
+    width: 210px;
+    margin-right: 10px;
+}
+
+#estado{
+    width: 80px;
+}
+
+#estado::placeholder{
+    text-indent: 30px;
+}
 /* desativar o olho padrao (que aparece no input type password) de todos os navegadores */
 input[type="password"]::-ms-reveal,
 input[type="password"]::-ms-clear {
