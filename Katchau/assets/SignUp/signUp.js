@@ -21,13 +21,6 @@ function buscaCEP(valor) {
                 popUpEvent('Digite um CEP válido', '23px');
             });
         };
-
-        if(cep.value === 0){
-            document.getElementById('adress').value = '';
-        document.getElementById('bairro').value = '';
-        document.getElementById('cidade').value = '';
-        document.getElementById('estado').value = '';
-        }
     };
 };
 
