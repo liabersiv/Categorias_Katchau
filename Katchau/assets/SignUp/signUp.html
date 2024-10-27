@@ -120,6 +120,10 @@
                                 onblur="buscaCEP(this.value)">
                             <i class="material-symbols-outlined icon-input">map</i>
                         </div>
+                        <div class="naosei-cep">
+                            <a href="https://buscaceprua.com.br/">Não sei meu cep.</a>
+                        </div>
+                        
                     </label>
 
 
@@ -155,15 +159,15 @@
                     </div>
 
                     <div class="endereco-row">
+                        <label for="estado">
+                            <div class="input">
+                                <input type="text" id="estado" name="estado" placeholder="UF" maxlength="2">
+                            </div>
+                        </label>
                         <label for="cidade">
                             <div class="input">
                                 <input type="text" id="cidade" name="cidade" placeholder="Cidade"
                                     onblur="buscaCEP(this.value)">
-                            </div>
-                        </label>
-                        <label for="estado">
-                            <div class="input">
-                                <input type="text" id="estado" name="estado" placeholder="UF">
                             </div>
                         </label>
                     </div>
