@@ -44,7 +44,7 @@ function limpaCepForm() {
 const adress = document.getElementById('adress');
 adress.addEventListener('keypress', () => {
     const adressLength = adress.value.length;
-    
+
     if (adressLength === 0) {
         adress.value = "Rua ";
     };
@@ -61,7 +61,7 @@ cep.addEventListener('keypress', (event) => {
     if (cepLength === 5) {
         cep.value += "-";
     };
-}); 
+});
 
 /* $(document).ready(function () {
     $('#cep').mask('00000-000');
@@ -134,7 +134,7 @@ close.addEventListener('click', () => {
 email.addEventListener('input', () => {
     stringDigitada = email.value.length;
 
-    if(email.value.endsWith('@g')){
+    if (email.value.endsWith('@g')) {
         email.value += 'mail.com';
     }
 });
@@ -164,13 +164,13 @@ phone.addEventListener('keypress', (event) => {
 
     let phoneLength = phone.value.length;
 
-    if (phoneLength === 0 ){
+    if (phoneLength === 0) {
         phone.value += '(';
-    }else if (phoneLength === 3){
+    } else if (phoneLength === 3) {
         phone.value += ') ';
     };
 
-    if (phoneLength === 10){
+    if (phoneLength === 10) {
         phone.value += '-';
     }
 });
@@ -215,7 +215,7 @@ function popUpEvent(mensagem, margem) {
 
     textAdded.textContent = mensagem;
 
-    if(margem){
+    if (margem) {
         textAdded.style.marginLeft = margem;
     };
 
