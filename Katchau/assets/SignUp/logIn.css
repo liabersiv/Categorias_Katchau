@@ -22,7 +22,7 @@ main {
     flex-direction: column;
     background-color: #393E46;
     width: 500px;
-    height: 430px;
+    height: 580px;
     border-radius: 30px;
     box-shadow: 2px 2px 25px #f8802f;
     border: 1px solid #232629;
@@ -46,7 +46,7 @@ main {
     border-radius: 20px;
     background-color: #FD7014;
     margin-top: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 form {
@@ -98,4 +98,24 @@ input::placeholder{
     color: #FD7014;
     text-decoration: underline;
     margin-bottom: 25px;
+}
+
+.options{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 12px;
+    margin-bottom: 10px;
+}
+
+.btn-options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #555555;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    color: #393E46;
 }
