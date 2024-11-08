@@ -65,7 +65,7 @@ form {
     display: flex;
 }
 
-input{
+.inputContainers input{
     margin-bottom: 20px;
     
 }
